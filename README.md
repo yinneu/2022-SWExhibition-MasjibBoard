@@ -1,5 +1,5 @@
 
-# :fork_and_knife:Masjib Board:fork_and_knife:
+# Masjib Board
 
 ## **맛집을 :mag_right:검색하고 :star2:추천받고 :pencil2:추가해보자!**
 
