@@ -4,11 +4,22 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./icons/fried-chicken.ico" />
     <link rel="stylesheet" href="./css/index.css" />
-    <title>Document</title>
+    <link rel="stylesheet" href="./css/randomCardDetail.css" />
+    <link rel="stylesheet" href="./css/randomCard.css" />
+    <link rel="stylesheet" href="./css/icon.css" />
+    <link rel="stylesheet" href="./css/navigation.css" />
+    <title>Random Pick</title>
   </head>
   <body>
     <div class="root">
+      <nav id="navigationBar">
+        <div id="navBtn" class="shortNav">
+          <span>🍖</span>
+        </div>
+        <div id="navBar" class="longNav hidden"></div>
+      </nav>
       <div class="cardArea" id="cardArea">
         <button class="card"></button>
         <button class="card"></button>
@@ -42,8 +53,13 @@
         <img src="./icons/taco.png" alt="1" />
         <img src="./icons/hamburger.png" alt="1" />
       </div>
+      <div id="cardDetail" class="hidden">
+        <span id="detailClose">❌</span>
+      </div>
     </div>
     <script src="./javascript/cardRotate.js"></script>
     <script src="./javascript/floating.js"></script>
+    <script src="./javascript/clickCard.js"></script>
+    <script src="./javascript/clickNav.js"></script>
   </body>
 </html>

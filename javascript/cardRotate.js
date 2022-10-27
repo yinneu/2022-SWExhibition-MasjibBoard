@@ -20,11 +20,9 @@ cardArea.addEventListener("mouseleave", handleMouseOut);
 cardArea.addEventListener("mousewheel", handleScroll);
 
 function cardHover(event) {
-  console.log(event.target);
   event.target.classList.add("cardScale");
 }
 function cardOut(event) {
-  console.log("out");
   event.target.classList.remove("cardScale");
 }
 

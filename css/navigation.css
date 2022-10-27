@@ -1,0 +1,57 @@
+#navigationBar {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 100;
+}
+
+.shortNav {
+    position: absolute;
+    display: flex;
+    top: 0;
+    right: 0;
+    width: 50px;
+    height: 50px;
+    border: solid 1px;
+    border-radius: 50%;
+    background-color: chocolate;
+    justify-content: center;
+    line-height: 50px;
+    z-index: 120;
+}
+
+.longNav {
+    position: relative;
+    width: 200px;
+    height: 50px;
+    background-color: chocolate;
+    border-radius: 25px;
+    float: left;
+    z-index: 100;
+    animation: spread 1s;
+    transition: 1000ms linear all;
+}
+.shorten {
+    animation: short 1s;
+}
+
+#navigationBar:hover {
+    cursor: pointer;
+}
+
+@keyframes spread {
+    0% {
+        width: 50px;
+    }
+    to {
+        width: 200px;
+    }
+}
+@keyframes short {
+    0% {
+        width: 200px;
+    }
+    to {
+        width: 50px;
+    }
+}
