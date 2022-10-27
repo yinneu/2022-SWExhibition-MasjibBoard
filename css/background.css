@@ -1,0 +1,23 @@
+.root {
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(45deg, Violet, Orange);
+  overflow: hidden;
+}
+.hidden {
+  display: none;
+}
+
+.invisible {
+  visibility: hidden;
+}
+
+* {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: mintcream;
+  margin-left: 10px;
+}

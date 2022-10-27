@@ -9,20 +9,7 @@
     (var(--area-value) / 2) - (var(--card-width) / 2)
   );
 }
-.hidden {
-  display: none;
-}
-
-* {
-  margin: 0;
-}
 
 body {
-  overflow: hidden;
-}
-.root {
-  width: 100vw;
-  height: 100vh;
-  background: linear-gradient(45deg, Violet, Orange);
   overflow: hidden;
 }

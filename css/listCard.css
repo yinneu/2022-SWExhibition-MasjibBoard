@@ -1,0 +1,55 @@
+#listCardArea {
+  position: absolute;
+  top: 0px;
+  display: flex;
+  width: 90vw;
+  height: 90vh;
+  margin: 30px 50px 30px 60px;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  overflow-y: scroll;
+  z-index: 60;
+}
+
+#listCardArea::-webkit-scrollbar {
+  width: 20px;
+}
+#listCardArea::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.listCard {
+  width: 100px;
+  height: 150px;
+  background-color: aqua;
+  margin: 30px;
+}
+
+.created {
+  animation: fadeInDown 1s;
+}
+.deleted {
+  animation: fadeOutUp 1s;
+}
+
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, -50%, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translateZ(0);
+  }
+}
+
+@keyframes fadeOutUp {
+  0% {
+    opacity: 1;
+    transform: translateZ(0);
+  }
+  to {
+    opacity: 0;
+    transform: translate3d(0, -50%, 0);
+  }
+}
