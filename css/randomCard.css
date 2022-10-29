@@ -1,0 +1,29 @@
+.cardArea {
+  position: absolute;
+  top: -40vw;
+  left: -40vw;
+  margin: 0;
+  width: var(--area-value);
+  height: var(--area-value);
+  border-radius: 50%;
+  transition: 1000ms ease-out all;
+  z-index: 100;
+}
+
+.card {
+  position: absolute;
+  top: var(--card-initialized-top);
+  left: var(--card-initialized-left);
+  width: var(--card-width);
+  height: var(--card-height);
+  background-color: blue;
+  border-style: none;
+  border-radius: 10%;
+  box-shadow: 10px 5px 5px rgba(128, 128, 128, 0.9);
+  transition: 200ms linear all;
+}
+.cardScale {
+  scale: 1.1;
+  cursor: pointer;
+  box-shadow: 25px 15px 15px 5px rgba(125, 125, 125, 0.9);
+}

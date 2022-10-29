@@ -1,0 +1,21 @@
+.iconArea {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  z-index: 50;
+}
+.iconArea img {
+  position: absolute;
+  animation: floating 1s linear infinite alternate;
+  width: 70px;
+  height: 70px;
+}
+
+@keyframes floating {
+  0% {
+    transform: translateY(-10px);
+  }
+  to {
+    transform: translateY(10px);
+  }
+}

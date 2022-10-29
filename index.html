@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./icons/fried-chicken.ico" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="./css/randomCardDetail.css" />
+    <link rel="stylesheet" href="./css/randomCard.css" />
+    <link rel="stylesheet" href="./css/icon.css" />
+    <link rel="stylesheet" href="./css/navigation.css" />
+    <link rel="stylesheet" href="./css/background.css" />
+    <title>Random Pick</title>
+  </head>
+  <body>
+    <div class="root">
+      <nav id="navigationBar">
+        <div id="navBtn" class="shortNav">
+          <span>🍖</span>
+        </div>
+        <div id="navBar" class="longNav hidden">
+          <a href="./index.html">Home</a>
+          <a href="./html/cardList.html">Card List</a>
+        </div>
+      </nav>
+      <div class="cardArea" id="cardArea">
+        <button class="card"></button>
+        <button class="card"></button>
+        <button class="card"></button>
+        <button class="card"></button>
+        <button class="card"></button>
+        <button class="card"></button>
+        <button class="card"></button>
+        <button class="card"></button>
+        <button class="card"></button>
+        <button class="card"></button>
+        <button class="card"></button>
+        <button class="card"></button>
+        <button class="card"></button>
+        <button class="card"></button>
+        <button class="card"></button>
+        <button class="card"></button>
+        <button class="card"></button>
+        <button class="card"></button>
+      </div>
+      <div class="iconArea" id="iconArea">
+        <img src="./icons/donut.png" alt="1" />
+        <img src="./icons/cake.png" alt="1" />
+        <img src="./icons/bibimbap.png" alt="1" />
+        <img src="./icons/fried-chicken.png" alt="1" />
+        <img src="./icons/hotdog.png" alt="1" />
+        <img src="./icons/noodles.png" alt="1" />
+        <img src="./icons/spoon.png" alt="1" />
+        <img src="./icons/salad.png" alt="1" />
+        <img src="./icons/sushi.png" alt="1" />
+        <img src="./icons/taco.png" alt="1" />
+        <img src="./icons/hamburger.png" alt="1" />
+      </div>
+      <div id="cardDetail" class="hidden">
+        <span id="detailClose">❌</span>
+      </div>
+    </div>
+    <script src="./javascript/cardRotate.js"></script>
+    <script src="./javascript/floating.js"></script>
+    <script src="./javascript/clickCard.js"></script>
+    <script src="./javascript/clickNav.js"></script>
+  </body>
+</html>

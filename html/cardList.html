@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/icon.css" />
+    <link rel="stylesheet" href="../css/listCard.css" />
+    <link rel="stylesheet" href="../css/background.css" />
+    <link rel="stylesheet" href="../css/navigation.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <title>Restaurant List</title>
+  </head>
+  <body>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <div id="root" class="root">
+      <nav id="navigationBar">
+        <div id="navBtn" class="shortNav">
+          <span>🍖</span>
+        </div>
+        <div id="navBar" class="longNav hidden">
+          <a href="../index.html">Home</a>
+          <a href="./cardList.html">Card List</a>
+        </div>
+      </nav>
+      <div class="iconArea" id="iconArea">
+        <img src="../icons/donut.png" alt="1" />
+        <img src="../icons/cake.png" alt="1" />
+        <img src="../icons/bibimbap.png" alt="1" />
+        <img src="../icons/fried-chicken.png" alt="1" />
+        <img src="../icons/hotdog.png" alt="1" />
+        <img src="../icons/noodles.png" alt="1" />
+        <img src="../icons/spoon.png" alt="1" />
+        <img src="../icons/salad.png" alt="1" />
+        <img src="../icons/sushi.png" alt="1" />
+        <img src="../icons/taco.png" alt="1" />
+        <img src="../icons/hamburger.png" alt="1" />
+      </div>
+      <div id="listCardArea"></div>
+    </div>
+    <script src="../javascript/floating.js"></script>
+    <script src="../javascript/clickNav.js"></script>
+    <script src="../javascript/listCard.js"></script>
+  </body>
+</html>

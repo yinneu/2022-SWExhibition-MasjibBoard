@@ -1,0 +1,15 @@
+:root {
+  --area-value: 80vw;
+  --card-width: 150px;
+  --card-height: 200px;
+  --card-initialized-top: calc(
+    (var(--area-value) / 2) - (var(--card-height) / 2)
+  );
+  --card-initialized-left: calc(
+    (var(--area-value) / 2) - (var(--card-width) / 2)
+  );
+}
+
+body {
+  overflow: hidden;
+}
