@@ -1,5 +1,7 @@
+/* 스크롤시 아이콘 고정 수정 */
 .iconArea {
-  position: relative;
+  /* position: relative; */
+  position: fixed;
   width: 100vw;
   height: 100vh;
   z-index: 50;
