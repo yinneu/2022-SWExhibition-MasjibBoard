@@ -37,7 +37,7 @@
 }
 
 /*폰 세로화면*/
-@media (max-device-width: 500px) and (max-device-height: 900px) {
+@media (max-width: 500px) and (max-height: 900px) {
   #listCardArea {
     position: absolute;
     top: 55px;
