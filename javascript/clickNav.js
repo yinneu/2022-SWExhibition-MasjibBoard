@@ -11,7 +11,6 @@ function handleClickBtn(event) {
     navBar.classList.remove("hidden");
     navBar.classList.remove("shorten");
     navBar.classList.add("widen");
-    console.log(navBar.classList);
     is_spread = true;
   } else {
     navBar.classList.remove("widen");
@@ -19,7 +18,6 @@ function handleClickBtn(event) {
     setTimeout(function () {
       navBar.classList.add("hidden");
     }, 1000);
-    console.log(navBar.classList);
     is_spread = false;
   }
 }

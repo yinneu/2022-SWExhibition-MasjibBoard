@@ -1,9 +1,9 @@
 #cardDetail {
   position: absolute;
-  top: 180px;
-  right: 100px;
-  width: 30vw;
-  height: 60vh;
+  top: 120px;
+  right: 150px;
+  width: 28vw;
+  height: 70vh;
   z-index: 70;
   border-radius: 20px;
   background-color: aqua;
@@ -33,4 +33,16 @@
   to {
     opacity: 1;
   }
+}
+
+/*랩탑 or 데스크탑*/
+@media (min-width: 1025px) {
+}
+
+/*폰 세로화면*/
+@media (max-device-width: 500px) and (max-device-height: 900px) {
+}
+
+/*폰 가로화면*/
+@media (max-device-width: 900px) and (max-device-height: 500px) {
 }

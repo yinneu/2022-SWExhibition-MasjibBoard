@@ -1,5 +1,7 @@
 const detail = document.getElementById("cardDetail");
 const closeBtn = document.getElementById("detailClose");
+const messageArea = document.getElementById("messageArea");
+
 const onClose = closeBtn.addEventListener("click", handleClose);
 
 for (let i = 0; i < cards.length; i++) {

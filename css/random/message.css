@@ -1,0 +1,32 @@
+/*랩탑 or 데스크탑*/
+@media (min-width: 1025px) {
+  #messageArea {
+    position: absolute;
+    top: 120px;
+    right: 150px;
+    width: 28vw;
+    height: 70vh;
+    text-align: center;
+    z-index: 65;
+    background-color: transparent;
+    border-radius: 20px;
+    margin: auto;
+  }
+  #message {
+    height: 70vh;
+    line-height: 35vh;
+    font-size: 25px;
+    font-weight: bold;
+  }
+}
+
+/*폰 세로화면*/
+@media (max-device-width: 500px) and (max-device-height: 900px) {
+  #messageArea {
+    display: none;
+  }
+}
+
+/*폰 가로화면*/
+@media (max-device-width: 900px) and (max-device-height: 500px) {
+}

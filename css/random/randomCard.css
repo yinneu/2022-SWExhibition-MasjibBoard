@@ -1,0 +1,63 @@
+/*랩탑 or 데스크탑*/
+@media (min-width: 1025px) {
+  .cardArea {
+    position: absolute;
+    top: -40vw;
+    left: -40vw;
+    margin: 0;
+    width: var(--area-value);
+    height: var(--area-value);
+    border-radius: 50%;
+    transition: 1000ms ease-out all;
+    z-index: 100;
+  }
+
+  .card {
+    position: absolute;
+    top: var(--card-initialized-top);
+    left: var(--card-initialized-left);
+    width: var(--card-width);
+    height: var(--card-height);
+    background-color: blue;
+    border-style: none;
+    border-radius: 10%;
+    box-shadow: 10px 5px 5px rgba(128, 128, 128, 0.9);
+    transition: 200ms linear all;
+  }
+  .cardScale {
+    scale: 1.1;
+    cursor: pointer;
+    box-shadow: 25px 15px 15px 5px rgba(125, 125, 125, 0.9);
+  }
+}
+
+/*폰 세로화면*/
+@media (max-device-width: 500px) and (max-device-height: 900px) {
+  .cardArea {
+    position: absolute;
+    top: 5px;
+    left: 0px;
+    display: flex;
+    width: auto;
+    height: auto;
+    /*margin: 100px 100px;*/
+    /*padding: 0 80px;*/
+    justify-content: space-around;
+    flex-wrap: wrap;
+    /* overflow-y: scroll; */
+    z-index: 60;
+  }
+
+  .card {
+    width: 250px;
+    height: 320px;
+    background-color: aqua;
+    margin: 28px;
+    /* margin: 28px auto; */
+    border-radius: 10%;
+  }
+}
+
+/*폰 가로화면*/
+@media (max-device-width: 900px) and (max-device-height: 500px) {
+}

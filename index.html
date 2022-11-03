@@ -4,17 +4,22 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--icon-->
     <link rel="shortcut icon" href="./icons/fried-chicken.ico" />
+    <!--my css link-->
     <link rel="stylesheet" href="./css/index.css" />
-    <link rel="stylesheet" href="./css/randomCardDetail.css" />
-    <link rel="stylesheet" href="./css/randomCard.css" />
     <link rel="stylesheet" href="./css/icon.css" />
     <link rel="stylesheet" href="./css/navigation.css" />
     <link rel="stylesheet" href="./css/background.css" />
+    <!--random card css-->
+    <link rel="stylesheet" href="./css/random/randomCardDetail.css" />
+    <link rel="stylesheet" href="./css/random/randomCard.css" />
+    <link rel="stylesheet" href="./css/random/message.css" />
     <title>Random Pick</title>
   </head>
   <body>
     <div class="root">
+      <!--navigation section-->
       <nav id="navigationBar">
         <div id="navBtn" class="shortNav">
           <span>🍖</span>
@@ -24,6 +29,7 @@
           <a href="./html/cardList.html">Card List</a>
         </div>
       </nav>
+      <!--card section-->
       <div class="cardArea" id="cardArea">
         <button class="card"></button>
         <button class="card"></button>
@@ -44,6 +50,7 @@
         <button class="card"></button>
         <button class="card"></button>
       </div>
+      <!--icon section-->
       <div class="iconArea" id="iconArea">
         <img src="./icons/donut.png" alt="1" />
         <img src="./icons/cake.png" alt="1" />
@@ -57,13 +64,23 @@
         <img src="./icons/taco.png" alt="1" />
         <img src="./icons/hamburger.png" alt="1" />
       </div>
+      <!--card detail section-->
       <div id="cardDetail" class="hidden">
         <span id="detailClose">❌</span>
       </div>
+      <!--message section-->
+      <div id="messageArea">
+        <p id="message">
+          왼쪽에 펼쳐진 카드들을 돌려,<br />
+          랜덤으로 오늘의 메뉴를 정해봐요
+        </p>
+      </div>
     </div>
-    <script src="./javascript/cardRotate.js"></script>
+    <!--my javascript link-->
     <script src="./javascript/floating.js"></script>
-    <script src="./javascript/clickCard.js"></script>
     <script src="./javascript/clickNav.js"></script>
+    <!--random card javascript link-->
+    <script src="./javascript/random/cardRotate.js"></script>
+    <script src="./javascript/random/clickCard.js"></script>
   </body>
 </html>
