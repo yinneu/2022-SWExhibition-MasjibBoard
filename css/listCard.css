@@ -1,28 +1,28 @@
+/* Card List Page */
+
+/* width, height 90v -> auto 수정, margin top 30 -> 100 수정, padding 추가 */
 #listCardArea {
   position: absolute;
-  top: 0px;
+  top: 200px;
   display: flex;
-  width: 90vw;
-  height: 90vh;
-  margin: 30px 50px 30px 60px;
-  justify-content: flex-start;
+  width: auto;
+  height: auto;
+  margin: 100px 100px;
+  padding: 0 80px;
+  justify-content: space-around;
   flex-wrap: wrap;
-  overflow-y: scroll;
+  /* overflow-y: scroll; */
   z-index: 60;
 }
 
-#listCardArea::-webkit-scrollbar {
-  width: 20px;
-}
-#listCardArea::-webkit-scrollbar-track {
-  background: transparent;
-}
-
+/* card size, margin 수정 */
 .listCard {
-  width: 100px;
-  height: 150px;
+  width: 250px;
+  height: 320px;
   background-color: aqua;
-  margin: 30px;
+  margin: 28px;
+  /* margin: 28px auto; */
+  border-radius: 10%;
 }
 
 .created {
@@ -52,4 +52,12 @@
     opacity: 0;
     transform: translate3d(0, -50%, 0);
   }
+}
+
+/* downArrow */
+#downArrow {
+  width: 100px;
+  height: 100px;
+  color: black;
+  z-index: 100;
 }
