@@ -1,5 +1,6 @@
 #navigationBar {
-  position: absolute;
+  /* position: absolute; */
+  position: fixed;
   top: 20px;
   right: 20px;
   z-index: 100;
@@ -12,12 +13,18 @@
   right: 0;
   width: 50px;
   height: 50px;
-  border: solid rgb(130, 45, 3) 1px;
+  border: solid #822d03 2px;
   border-radius: 50%;
   background-color: chocolate;
   justify-content: center;
   line-height: 50px;
   z-index: 120;
+  transition: all 0.5s;
+}
+
+/* hover추가 */
+.shortNav:hover {
+  scale: 1.2;
 }
 
 .longNav {

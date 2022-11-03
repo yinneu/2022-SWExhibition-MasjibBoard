@@ -1,0 +1,29 @@
+{
+  "name": "sojeon",
+  "version": "1.0.0",
+  "description": "- **팀명**   \r 포도맛마이쭈 :grapes:",
+  "main": "server.js",
+  "scripts": {
+    "start": "node index"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yinneu/2022-SWExhibition-MasjibBoard.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yinneu/2022-SWExhibition-MasjibBoard/issues"
+  },
+  "homepage": "https://github.com/yinneu/2022-SWExhibition-MasjibBoard#readme",
+  "dependencies": {
+    "body-parser": "^1.20.1",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "method-override": "^3.0.0",
+    "mysql": "^2.18.1",
+    "nodemon": "^2.0.20",
+    "request": "^2.88.2"
+  }
+}
