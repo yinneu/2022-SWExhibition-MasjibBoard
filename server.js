@@ -18,8 +18,8 @@ app.get("/index", (req, res) => {
 });
 
 app.get("/users", (req, res) => {
-  //connection.query("SELECT * from random_mj.mjlist", (error, rows) => {
-  connection.query("SELECT * from Random_mj.MJList", (error, rows) => {
+  connection.query("SELECT * from random_mj.mjlist", (error, rows) => {
+    //connection.query("SELECT * from Random_mj.MJList", (error, rows) => {
     if (error) throw error;
     console.log("User info is: ", rows);
     res.send(rows);

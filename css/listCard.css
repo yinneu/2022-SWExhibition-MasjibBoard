@@ -53,11 +53,3 @@
     transform: translate3d(0, -50%, 0);
   }
 }
-
-/* downArrow */
-#downArrow {
-  width: 100px;
-  height: 100px;
-  color: black;
-  z-index: 100;
-}
