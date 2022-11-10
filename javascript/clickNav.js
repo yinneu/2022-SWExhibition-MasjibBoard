@@ -15,6 +15,7 @@ function handleClickBtn(event) {
   } else {
     navBar.classList.remove("widen");
     navBar.classList.add("shorten");
+
     setTimeout(function () {
       navBar.classList.add("hidden");
     }, 1000);
