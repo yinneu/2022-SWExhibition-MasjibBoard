@@ -1,5 +1,6 @@
 const area = document.getElementById("listCardArea");
 const cards = document.getElementsByClassName("listCard");
+const topBtn = document.querySelector("#toTop");
 
 for (let i = 0; i < 30; i++) {
   const card = document.createElement("div");
@@ -17,3 +18,20 @@ for (let i = 0; i < 30; i++) {
   card.setAttribute("data-aos-anchor-placement", "center-bottom");
   area.appendChild(card);
 }
+
+topBtn.addEventListener("click", () => {
+  scrollIntoView("#top");
+});
+
+function scrollIntoView(selector) {
+  const scrollTo = document.querySelector(selector);
+  scrollTo.scrollIntoView({ behavior: "smooth" });
+}
+
+document.addEventListener("scroll", () => {
+  if (window.scrollY > 500) {
+    topBtn.style.display = "block";
+  } else {
+    topBtn.style.display = "none";
+  }
+});
