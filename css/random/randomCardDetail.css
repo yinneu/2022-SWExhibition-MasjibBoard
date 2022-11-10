@@ -1,0 +1,156 @@
+@keyframes scale {
+  0% {
+    scale: 0.3;
+  }
+  to {
+    scale: 1;
+  }
+}
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/*랩탑 or 데스크탑*/
+@media (min-width: 1025px) {
+  #cardDetail {
+    position: absolute;
+    top: 50px;
+    right: 150px;
+    width: 28vw;
+    height: 600px;
+    z-index: 70;
+    border-radius: 20px;
+    background-color: chocolate;
+    animation: fadein ease-out 0.5s, scale ease-out 0.5s;
+  }
+
+  #detailClose {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    z-index: 100;
+  }
+  #detailClose:hover {
+    cursor: pointer;
+  }
+
+  .detailBody {
+    position: absolute;
+    top: 0px;
+    width: 28vw;
+    height: 600px;
+    overflow: hidden;
+  }
+
+  .detailBody img {
+    border-radius: 20px 20px 0px 0px;
+    z-index: 95;
+    width: 28vw;
+    height: 30vh;
+  }
+  .detailBody .restaurantName {
+    padding: 15px;
+  }
+  .detailBody > .context {
+    overflow-y: auto;
+    height: 300px;
+    padding: 0px 15px 0px 15px;
+  }
+
+  .detailBody hr {
+    border: 0px;
+    border-top: 2px solid;
+    border-color: brown;
+  }
+
+  .detailBody .column {
+    margin: 15px 0px 15px 0px;
+  }
+}
+
+/*폰 세로화면*/
+@media (max-device-width: 500px) and (max-device-height: 900px) {
+  #cardDetail {
+    position: absolute;
+    top: 80px;
+    left: 0px;
+    right: 150px;
+    width: 100vw;
+    height: calc(100vh - 80px);
+    z-index: 70;
+    background-color: chocolate;
+  }
+
+  #detailClose {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    z-index: 100;
+  }
+  #detailClose:hover {
+    cursor: pointer;
+  }
+
+  .detailBody {
+    position: absolute;
+    top: 0px;
+    width: 100vw;
+    height: calc(100vh - 80px);
+  }
+
+  .detailBody img {
+    z-index: 95;
+    width: 100vw;
+    height: 30vh;
+  }
+  .detailBody .restaurantName {
+    padding: 15px;
+  }
+  .detailBody > .context {
+    overflow-y: auto;
+    height: calc(50vh + 20px);
+    padding: 0px 15px 0px 15px;
+  }
+
+  .detailBody hr {
+    border: 0px;
+    border-top: 2px solid;
+    border-color: brown;
+  }
+
+  .detailBody .column {
+    margin: 15px 0px 15px 0px;
+  }
+
+  .silde_up {
+    animation: slide_up ease-out 0.5s;
+  }
+  .slide_down {
+    animation: slide_down ease-out 0.5s;
+  }
+  @keyframes slide_up {
+    0% {
+      top: 100%;
+    }
+    to {
+      top: 80px;
+    }
+  }
+  @keyframes slide_down {
+    0% {
+      top: 80px;
+    }
+    to {
+      top: 100%;
+    }
+  }
+}
+
+/*폰 가로화면*/
+@media (max-device-width: 900px) and (max-device-height: 500px) {
+}

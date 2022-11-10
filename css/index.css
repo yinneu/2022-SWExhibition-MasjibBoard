@@ -10,6 +10,20 @@
   );
 }
 
-body {
-  overflow: hidden;
+/*랩탑 or 데스크탑*/
+@media (min-width: 1025px) {
+  body {
+    overflow: hidden;
+  }
+}
+
+/*폰 세로화면*/
+@media (max-device-width: 500px) and (max-device-height: 900px) {
+  .cardArea {
+    overflow-y: scroll;
+  }
+}
+
+/*폰 가로화면*/
+@media (max-device-width: 900px) and (max-device-height: 500px) {
 }
