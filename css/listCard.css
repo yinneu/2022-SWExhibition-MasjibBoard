@@ -1,0 +1,63 @@
+/* Card List Page */
+
+/* width, height 90v -> auto 수정, margin top 30 -> 100 수정, padding 추가 */
+#listCardArea {
+  position: absolute;
+  top: 200px;
+  display: flex;
+  width: auto;
+  height: auto;
+  margin: 100px 100px;
+  padding: 0 80px;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  /* overflow-y: scroll; */
+  z-index: 60;
+}
+
+/* card size, margin 수정 */
+.listCard {
+  width: 250px;
+  height: 320px;
+  background-color: aqua;
+  margin: 28px;
+  /* margin: 28px auto; */
+  border-radius: 10%;
+}
+
+.created {
+  animation: fadeInDown 1s;
+}
+.deleted {
+  animation: fadeOutUp 1s;
+}
+
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, -50%, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translateZ(0);
+  }
+}
+
+@keyframes fadeOutUp {
+  0% {
+    opacity: 1;
+    transform: translateZ(0);
+  }
+  to {
+    opacity: 0;
+    transform: translate3d(0, -50%, 0);
+  }
+}
+
+/* downArrow */
+#downArrow {
+  width: 100px;
+  height: 100px;
+  color: black;
+  z-index: 100;
+}
