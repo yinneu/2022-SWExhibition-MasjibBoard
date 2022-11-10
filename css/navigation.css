@@ -74,7 +74,7 @@
 }
 
 /*폰 세로화면*/
-@media (max-device-width: 500px) and (max-device-height: 900px) {
+@media (max-device-width: 600px) and (max-device-height: 1000px) {
 }
 
 /*폰 가로화면*/

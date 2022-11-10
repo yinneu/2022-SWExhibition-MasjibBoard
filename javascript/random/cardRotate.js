@@ -6,7 +6,7 @@ let angle_after = 0;
 
 const media_desktop = matchMedia("(min-width: 1025px)");
 const media_mobile_vertical = matchMedia(
-  "(max-device-width: 500px) and (max-device-height: 900px)"
+  "(max-device-width: 600px) and (max-device-height: 1000px)"
 );
 const media_mobile_horizontal = matchMedia(
   "(max-device-width: 900px) and (max-device-height: 500px)"
