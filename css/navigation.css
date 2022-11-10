@@ -5,7 +5,7 @@
   right: 20px;
   z-index: 100;
 }
-
+/*클릭하기 전 내비게이션*/
 .shortNav {
   position: absolute;
   display: flex;
@@ -26,12 +26,12 @@
 .shortNav:hover {
   scale: 1.2;
 }
-
+/*클릭 후 내비게이션*/
 .longNav {
   position: relative;
   width: 200px;
-  height: 52px;
-  line-height: 50px;
+  height: 54px;
+  line-height: 54px;
   background-color: chocolate;
   border-radius: 25px;
   float: left;
@@ -50,6 +50,7 @@
   cursor: pointer;
 }
 
+/*너비가 늘어나는 애니매이션*/
 @keyframes spread {
   0% {
     width: 50px;
@@ -58,6 +59,7 @@
     width: 200px;
   }
 }
+/*너비가 줄어드는 애니매이션*/
 @keyframes short {
   0% {
     width: 200px;
@@ -65,4 +67,16 @@
   to {
     width: 50px;
   }
+}
+
+/*랩탑 or 데스크탑*/
+@media (min-width: 1025px) {
+}
+
+/*폰 세로화면*/
+@media (max-device-width: 600px) and (max-device-height: 1000px) {
+}
+
+/*폰 가로화면*/
+@media (max-device-width: 900px) and (max-device-height: 500px) {
 }

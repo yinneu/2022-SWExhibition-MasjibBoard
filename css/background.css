@@ -31,27 +31,38 @@ a {
   margin-left: 10px;
 }
 
-/* Scroll style */
+/*랩탑 or 데스크탑*/
+@media (min-width: 1025px) {
+  /* Scroll style */
 
-/* 스크롤바 전체 영역 */
-::-webkit-scrollbar {
-  width: 16px;
+  /* 스크롤바 전체 영역 */
+  ::-webkit-scrollbar {
+    width: 16px;
+  }
+
+  /* 스크롤을 움직이는 영역 */
+  ::-webkit-scrollbar-track {
+    background: #ffa500;
+  }
+
+  /* 스크롤 */
+  ::-webkit-scrollbar-thumb {
+    height: 30px;
+    border-radius: 10px;
+    background-color: chocolate;
+    background-clip: padding-box;
+    border: 4px solid transparent;
+  }
+  ::-webkit-scrollbar-button {
+    width: 0;
+    height: 0;
+  }
 }
 
-/* 스크롤을 움직이는 영역 */
-::-webkit-scrollbar-track {
-  background: #ffa500;
+/*폰 세로화면*/
+@media (max-device-width: 600px) and (max-device-height: 1000px) {
 }
 
-/* 스크롤 */
-::-webkit-scrollbar-thumb {
-  height: 30px;
-  border-radius: 10px;
-  background-color: chocolate;
-  background-clip: padding-box;
-  border: 4px solid transparent;
-}
-::-webkit-scrollbar-button {
-  width: 0;
-  height: 0;
+/*폰 가로화면*/
+@media (max-device-width: 900px) and (max-device-height: 500px) {
 }
