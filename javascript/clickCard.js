@@ -14,6 +14,7 @@ if (media_desktop.matches) {
   }
   function handleClose(event) {
     detail.classList.add("hidden");
+    location.reload();
   }
 }
 
@@ -22,12 +23,10 @@ if (media_mobile_vertical.matches) {
   const root = document.querySelector(".root");
   let isSpread = false;
 
-  console.dir(window);
   for (let i = 0; i < cards.length; i++) {
     cards[i].addEventListener("click", handleClick);
   }
   function handleClick(event) {
-    console.dir(cardArea.style);
     const clickedCard = event.target;
     detail.classList.remove("hidden");
     detail.classList.remove("slide_down");
@@ -41,7 +40,8 @@ if (media_mobile_vertical.matches) {
     isSpread = false;
     setTimeout(function () {
       detail.classList.add("hidden");
-    }, 500);
+      location.reload();
+    }, 600);
 
     root.style.position = "static";
   }

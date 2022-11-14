@@ -19,9 +19,6 @@
 
 /*폰 세로화면*/
 @media (max-device-width: 600px) and (max-device-height: 1000px) {
-  .cardArea {
-    overflow-y: scroll;
-  }
 }
 
 /*폰 가로화면*/
