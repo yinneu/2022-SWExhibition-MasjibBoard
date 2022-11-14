@@ -39,13 +39,13 @@
 
       <!-- Categroy Section -->
       <ul class="categoryArea">
-        <li class="category-item">한식</li>
-        <li class="category-item">일식</li>
-        <li class="category-item">양식</li>
-        <li class="category-item">카페</li>
-        <li class="category-item">술집</li>
-        <li class="category-item">해물</li>
-        <li class="category-item">분식</li>
+        <li id = "한식" class="category-item">한식</li>
+        <li id = "일식" class="category-item">일식</li>
+        <li id = "양식" class="category-item">양식</li>
+        <li id = "카페" class="category-item">카페</li>
+        <li id = "술집" class="category-item">술집</li>
+        <li id = "해물" class="category-item">해물</li>
+        <li id = "분식" class="category-item">분식</li>
       </ul>
 
 
@@ -92,6 +92,25 @@
     <script src="../javascript/clickNav.js"></script>
     <!--card list javascript-->
     <script src="../javascript/listCard.js"></script>
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script>
+      $('.category-item').click(function (e) {
+        let 카테고리 = e.target.id;
+        console.log(typeof(카테고리));
+        let ds = encodeURI(카테고리);
+
+        $.ajax({
+          method: 'get',
+          url: '/cardList/' + 카테고리,
+          //contentType: "application/x-www-form-urlencoded; charset=UTF-8",
+        }).done(function (결과) {
+          location.href = '/cardList/' + encodeURI(카테고리, "UTF-8");
+        }).fail(function (a, b, c) {
+
+        });
+
+      })
+     </script>
   </body>
 </html>
 
