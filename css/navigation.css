@@ -29,7 +29,7 @@
 /*클릭 후 내비게이션*/
 .longNav {
   position: relative;
-  width: 200px;
+  width: 210px; /*200*/
   height: 54px;
   line-height: 54px;
   background-color: chocolate;
@@ -56,13 +56,13 @@
     width: 50px;
   }
   to {
-    width: 200px;
+    width: 210px;
   }
 }
 /*너비가 줄어드는 애니매이션*/
 @keyframes short {
   0% {
-    width: 200px;
+    width: 210px;
   }
   to {
     width: 50px;
