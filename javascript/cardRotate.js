@@ -57,24 +57,24 @@ if (media_desktop.matches) {
 
 //폰 세로화면일 때 카드 무한 스크롤
 if (media_mobile_vertical.matches) {
-  cardArea.addEventListener("touchmove", handleMove);
-
-  let newCard = document.createElement("button");
-  newCard.classList.add("card");
-  cardArea.appendChild(newCard);
-
-  for (let i = 0; i < 100; i++) {
-    newCard = document.createElement("button");
-    newCard.classList.add("card");
-    cardArea.appendChild(newCard);
+  for (let i = 0; i < cards.length; i++) {
+    cards[i].style.transform = `
+      rotate(${ANGLE * i}deg) translate(400px) rotate(90deg)`;
+  }
+  for (let i = 0; i < cards.length; i++) {
+    cards[i].addEventListener("mouseenter", cardHover);
+    cards[i].addEventListener("mouseleave", cardOut);
   }
 
-  function handleMove(event) {
-    newCard = document.createElement("button");
-    newCard.classList.add("card");
-    cardArea.appendChild(newCard);
+  cardArea.addEventListener("mousewheel", handleScroll);
 
-    cardArea.removeChild(cardArea.children[2]);
-    console.log(cards.length);
+  function handleScroll(event) {
+    let direction = event.wheelDelta;
+    if (direction > 0) {
+      angle_after -= 35;
+    } else {
+      angle_after += 35;
+    }
+    cardArea.style.transform = "rotate(" + angle_after + "deg";
   }
 }

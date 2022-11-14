@@ -3,7 +3,7 @@
   position: fixed;
   top: 20px;
   right: 20px;
-  z-index: 100;
+  z-index: 150;
 }
 /*클릭하기 전 내비게이션*/
 .shortNav {
@@ -18,14 +18,10 @@
   background-color: chocolate;
   justify-content: center;
   line-height: 50px;
-  z-index: 120;
+  z-index: 160;
   transition: all 0.5s;
 }
 
-/* hover추가 */
-.shortNav:hover {
-  scale: 1.2;
-}
 /*클릭 후 내비게이션*/
 .longNav {
   position: relative;
@@ -35,7 +31,7 @@
   background-color: chocolate;
   border-radius: 25px;
   float: left;
-  z-index: 100;
+  z-index: 150;
   transition: 1000ms linear all;
   overflow: hidden;
 }
@@ -71,6 +67,10 @@
 
 /*랩탑 or 데스크탑*/
 @media (min-width: 1025px) {
+  /* hover추가 */
+  .shortNav:hover {
+    scale: 1.2;
+  }
 }
 
 /*폰 세로화면*/
