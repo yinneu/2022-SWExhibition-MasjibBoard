@@ -33,28 +33,33 @@
 
 /*폰 세로화면*/
 @media (max-width: 600px) and (max-height: 1000px) {
+  body {
+    position: fixed;
+  }
+
   .cardArea {
     position: absolute;
-    top: 5px;
-    left: 0px;
-    display: flex;
-    width: auto;
-    height: auto;
-    /*margin: 100px 100px;*/
-    /*padding: 0 80px;*/
-    justify-content: space-around;
-    flex-wrap: wrap;
-    /* overflow-y: scroll; */
-    z-index: 60;
+    top: -3vh;
+    left: -600px;
+    margin: 0;
+    width: 800px;
+    height: 800px;
+    border-radius: 50%;
+    transition: 1000ms ease-out all;
+    z-index: 100;
   }
 
   .card {
-    width: 250px;
-    height: 320px;
-    background-color: aqua;
-    margin: 28px;
-    /* margin: 28px auto; */
+    position: absolute;
+    top: 325px;
+    left: 350px;
+    width: 100px;
+    height: 150px;
+    background-color: blue;
+    border-style: none;
     border-radius: 10%;
+    box-shadow: 10px 5px 5px rgba(128, 128, 128, 0.9);
+    transition: 200ms linear all;
   }
 }
 

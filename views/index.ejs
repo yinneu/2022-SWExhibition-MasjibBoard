@@ -30,27 +30,25 @@
         </div>
       </nav>
       <!--card section-->
-      <div id="outerArea">
-        <div class="cardArea" id="cardArea">
-          <button class="card"></button>
-          <button class="card"></button>
-          <button class="card"></button>
-          <button class="card"></button>
-          <button class="card"></button>
-          <button class="card"></button>
-          <button class="card"></button>
-          <button class="card"></button>
-          <button class="card"></button>
-          <button class="card"></button>
-          <button class="card"></button>
-          <button class="card"></button>
-          <button class="card"></button>
-          <button class="card"></button>
-          <button class="card"></button>
-          <button class="card"></button>
-          <button class="card"></button>
-          <button class="card"></button>
-        </div>
+      <div class="cardArea" id="cardArea">
+        <button class="card"></button>
+        <button class="card"></button>
+        <button class="card"></button>
+        <button class="card"></button>
+        <button class="card"></button>
+        <button class="card"></button>
+        <button class="card"></button>
+        <button class="card"></button>
+        <button class="card"></button>
+        <button class="card"></button>
+        <button class="card"></button>
+        <button class="card"></button>
+        <button class="card"></button>
+        <button class="card"></button>
+        <button class="card"></button>
+        <button class="card"></button>
+        <button class="card"></button>
+        <button class="card"></button>
       </div>
       <!--icon section-->
       <div class="iconArea" id="iconArea">
@@ -70,19 +68,17 @@
       <div id="cardDetail" class="hidden">
         <span id="detailClose">❌</span>
         <div class="detailBody">
-          <% if(locals.data) { %>
-            <% let i = 8 %>
-            <img src="<%= data[i].image%>" alt="1" />
-            <div class="restaurantName"><%= data[i].title%></div>
-            <div class="context">
-              <hr />
-              <div class="openingTime column">영업시간: 12:00~22:00</div>
-              <hr />
-              <div class="category column">
-                <%= data[i].category%>
-              </div>
-              <hr />
-            </div>
+          <% if(locals.data) { %> <% let i = Math.floor(Math.random() *
+          data.length) %>
+          <img src="<%= data[i].image%>" alt="1" />
+          <div class="restaurantName"><%= data[i].title%></div>
+          <div class="context">
+            <hr />
+            <div class="address column"><%= data[i].address %></div>
+            <hr />
+            <div class="category column"><%= data[i].category%></div>
+            <hr />
+          </div>
           <% } %>
         </div>
       </div>

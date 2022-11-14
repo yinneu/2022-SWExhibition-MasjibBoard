@@ -66,22 +66,35 @@
       <!--card section-->
       <div id="top"></div>
       <div id="listCardArea">
-
-        <% if (locals.data) { %>
-          <% for (let i = 0; i < data.length; i++) { %>
-            <% let im =  data[i].image %>
-            <div class="listCard aos-animate" data-aos="flip-right" data-aos-duration="500" data-aos-anchor-placement="center-bottom">
-              <img src="<%= data[i].image %>" class="resImg" />
-              <span> <%= data[i].title %> </span>  <br>
-              <span> <%= data[i].address %> </span>  <br>
-              <span> <%= data[i].contact %> </span>  <br>
-              <span> <%= data[i].category %> </span>  <br>
-              <a href="<%= data[i].link %>"> 링크 </a>  <br>
-              
-            </div>
-          <% } %>
-        <% } %>
-
+        <% if (locals.data) { %> <% for (let i = 0; i < data.length; i++) { %>
+        <% let im = data[i].image %>
+        <div
+          class="listCard aos-animate"
+          data-aos="flip-right"
+          data-aos-duration="500"
+          data-aos-anchor-placement="center-bottom"
+        >
+          <div class="imgArea">
+            <img src="<%= data[i].image %>" class="resImg" />
+          </div>
+          <div class="listCardBody">
+            <span> <%= data[i].title %> </span> <br />
+            <hr />
+            <% if (data[i].address.length < 16) { %>
+            <span> <%= data[i].address %> </span> <br />
+            <% } else { %>
+            <span> <%= data[i].address.substring(0, 17) %> </span> <br />
+            <span> <%= data[i].address.substring(17) %> </span> <br />
+            <% } %>
+            <hr />
+            <span> <%= data[i].contact %> </span> <br />
+            <hr />
+            <span> <%= data[i].category %> </span> <br />
+            <hr />
+            <a href="<%= data[i].link %>"> 링크 </a> <br />
+          </div>
+        </div>
+        <% } %> <% } %>
       </div>
       <a id="toTop">
         <img src="../icons/arrow-up.png" alt="top" title="to Up" id="arrowUp" />
@@ -113,5 +126,3 @@
      </script>
   </body>
 </html>
-
-
