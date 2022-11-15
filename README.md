@@ -8,9 +8,7 @@
 포도맛마이쭈 :grapes:
 
 - **팀원**   
- 프론트엔드 :  연예림(깃허브), 신은철(깃허브)   
- 백엔드 :  김태현(깃허브)   
-
+ 프론트엔드 :  연예림, 신은철 
 
 
 ---
@@ -29,11 +27,12 @@
 ### 개발언어와 개발환경
 
 - 개발언어   
-html, css, react.js 
-java
+HTML, CSS, JAVASCRIPT 
+LINUX
 
-- 개발환경   
-intellij, mysql 등
+- 개발환경 및 도구
+AWS, MySQL, VSCODE, PUTTY 등
+NAVER 지역 검색 API, Selenium
 
 ---
 ### 페이지 레이아웃 구성

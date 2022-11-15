@@ -26,7 +26,6 @@ body {
 }
 
 /*랩탑 or 데스크탑*/
-@media (min-width: 1025px) {
   /* Scroll style */
 
   /* 스크롤바 전체 영역 */
@@ -51,12 +50,4 @@ body {
     width: 0;
     height: 0;
   }
-}
 
-/*폰 세로화면*/
-@media (max-device-width: 600px) and (max-device-height: 1000px) {
-}
-
-/*폰 가로화면*/
-@media (max-device-width: 900px) and (max-device-height: 500px) {
-}
