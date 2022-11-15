@@ -4,16 +4,12 @@ const ANGLE = 360 / cards.length;
 let onHover = false;
 let angle_after = 0;
 
-const media_desktop = matchMedia("(min-width: 1025px)");
 const media_mobile_vertical = matchMedia(
-  "(max-device-width: 600px) and (max-device-height: 1000px)"
-);
-const media_mobile_horizontal = matchMedia(
-  "(max-device-width: 900px) and (max-device-height: 500px)"
+  "(max-device-width: 786px)"
 );
 
 //랩탑 or 데스크탑일 때 카드 배치
-if (media_desktop.matches) {
+if (!media_mobile_vertical.matches) {
   for (let i = 0; i < cards.length; i++) {
     cards[i].style.transform = `
       rotate(${ANGLE * i}deg) translate(600px) rotate(90deg)`;
@@ -53,10 +49,7 @@ if (media_desktop.matches) {
       cardArea.style.transform = "rotate(" + angle_after + "deg";
     }
   }
-}
-
-//폰 세로화면일 때 카드 무한 스크롤
-if (media_mobile_vertical.matches) {
+}else {
   for (let i = 0; i < cards.length; i++) {
     cards[i].style.transform = `
       rotate(${ANGLE * i}deg) translate(400px) rotate(90deg)`;

@@ -16,7 +16,6 @@
 }
 
 /*랩탑 or 데스크탑*/
-@media (min-width: 1025px) {
   #cardDetail {
     position: absolute;
     top: 50px;
@@ -71,10 +70,9 @@
   .detailBody .column {
     margin: 15px 0px 15px 0px;
   }
-}
 
 /*폰 세로화면*/
-@media (max-device-width: 600px) and (max-device-height: 1000px) {
+@media (max-device-width: 786px) {
   #cardDetail {
     position: absolute;
     top: 80px;
@@ -149,8 +147,4 @@
       top: 1000px;
     }
   }
-}
-
-/*폰 가로화면*/
-@media (max-device-width: 900px) and (max-device-height: 500px) {
 }

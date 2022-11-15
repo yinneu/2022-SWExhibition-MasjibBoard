@@ -2,22 +2,6 @@ const detail = document.getElementById("cardDetail");
 const closeBtn = document.getElementById("detailClose");
 const messageArea = document.getElementById("messageArea");
 
-if (media_desktop.matches) {
-  const onClose = closeBtn.addEventListener("click", handleClose);
-
-  for (let i = 0; i < cards.length; i++) {
-    cards[i].addEventListener("click", handleClick);
-  }
-  function handleClick(event) {
-    const clickedCard = event.target;
-    detail.classList.remove("hidden");
-  }
-  function handleClose(event) {
-    detail.classList.add("hidden");
-    location.reload();
-  }
-}
-
 if (media_mobile_vertical.matches) {
   const onClose = closeBtn.addEventListener("click", handleClose);
   const root = document.querySelector(".root");
@@ -44,5 +28,19 @@ if (media_mobile_vertical.matches) {
     }, 600);
 
     root.style.position = "static";
+  }
+}else {
+  const onClose = closeBtn.addEventListener("click", handleClose);
+
+  for (let i = 0; i < cards.length; i++) {
+    cards[i].addEventListener("click", handleClick);
+  }
+  function handleClick(event) {
+    const clickedCard = event.target;
+    detail.classList.remove("hidden");
+  }
+  function handleClose(event) {
+    detail.classList.add("hidden");
+    location.reload();
   }
 }

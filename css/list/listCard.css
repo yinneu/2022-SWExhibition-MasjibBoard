@@ -4,6 +4,7 @@ hr {
 }
 #toTop {
   position: fixed;
+  /* position: absolute; */
   bottom: 15px;
   right: 15px;
   z-index: 200;
@@ -31,7 +32,6 @@ hr {
 }
 
 /*랩탑 or 데스크탑*/
-@media (min-width: 1025px) {
   /* width, height 90v -> auto 수정, margin top 30 -> 100 수정, padding 추가 */
   #listCardArea {
     position: absolute;
@@ -68,10 +68,10 @@ hr {
     padding: 0 10px;
     overflow-wrap: inherit;
   }
-}
 
 /*폰 세로화면*/
-@media (max-width: 600px) and (max-height: 1000px) {
+@media (max-width: 786px) {
+
   #listCardArea {
     position: absolute;
     top: 55px;
@@ -79,11 +79,9 @@ hr {
     display: flex;
     width: auto;
     height: auto;
-    /*margin: 100px 100px;*/
-    /*padding: 0 80px;*/
+    padding: 0 10px;
     justify-content: space-around;
     flex-wrap: wrap;
-    /* overflow-y: scroll; */
     z-index: 60;
   }
 
@@ -119,6 +117,3 @@ hr {
   }
 }
 
-/*폰 가로화면*/
-@media (max-device-width: 900px) and (max-device-height: 500px) {
-}
