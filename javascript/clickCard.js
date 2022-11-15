@@ -29,7 +29,7 @@ if (media_mobile_vertical.matches) {
 
     root.style.position = "static";
   }
-}else {
+} else {
   const onClose = closeBtn.addEventListener("click", handleClose);
 
   for (let i = 0; i < cards.length; i++) {

@@ -16,63 +16,63 @@
 }
 
 /*랩탑 or 데스크탑*/
-  #cardDetail {
-    position: absolute;
-    top: 50px;
-    right: 150px;
-    width: 28vw;
-    height: 600px;
-    z-index: 110;
-    border-radius: 20px;
-    background-color: chocolate;
-    animation: fadein ease-out 0.5s, scale ease-out 0.5s;
-  }
+#cardDetail {
+  position: absolute;
+  top: 50px;
+  right: 150px;
+  width: 28vw;
+  height: 600px;
+  z-index: 110;
+  border-radius: 20px;
+  background-color: chocolate;
+  animation: fadein ease-out 0.5s, scale ease-out 0.5s;
+}
 
-  #detailClose {
-    position: absolute;
-    top: 5px;
-    right: 5px;
-    z-index: 100;
-  }
-  #detailClose:hover {
-    cursor: pointer;
-  }
+#detailClose {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  z-index: 100;
+}
+#detailClose:hover {
+  cursor: pointer;
+}
 
-  .detailBody {
-    position: absolute;
-    top: 0px;
-    width: 28vw;
-    height: 600px;
-    overflow: hidden;
-  }
+.detailBody {
+  position: absolute;
+  top: 0px;
+  width: 28vw;
+  height: 600px;
+  overflow: hidden;
+}
 
-  .detailBody img {
-    border-radius: 20px 20px 0px 0px;
-    z-index: 95;
-    width: 28vw;
-    height: 30vh;
-  }
-  .detailBody .restaurantName {
-    padding: 15px;
-  }
-  .detailBody > .context {
-    overflow-y: auto;
-    height: 300px;
-    padding: 0px 15px 0px 15px;
-  }
+.detailBody img {
+  border-radius: 20px 20px 0px 0px;
+  z-index: 95;
+  width: 28vw;
+  height: 30vh;
+}
+.detailBody .restaurantName {
+  padding: 15px;
+}
+.detailBody > .context {
+  overflow-y: auto;
+  height: 300px;
+  padding: 0px 15px 0px 15px;
+}
 
-  .detailBody hr {
-    border: 0px;
-    border-top: 2px solid;
-    border-color: brown;
-  }
+.detailBody hr {
+  border: 0px;
+  border-top: 2px solid;
+  border-color: brown;
+}
 
-  .detailBody .column {
-    margin: 15px 0px 15px 0px;
-  }
+.detailBody .column {
+  margin: 15px 0px 15px 0px;
+}
 
 /*폰 세로화면*/
-@media (max-device-width: 786px) {
+@media (max-width: 786px) {
   #cardDetail {
     position: absolute;
     top: 80px;
@@ -144,7 +144,7 @@
       top: 80px;
     }
     to {
-      top: 1000px;
+      top: 100%;
     }
   }
 }
