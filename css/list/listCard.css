@@ -1,6 +1,6 @@
 /* Card List Page */
-hr {
-  margin: 0;
+a {
+  display: none;
 }
 #toTop {
   position: fixed;
@@ -22,13 +22,31 @@ hr {
   cursor: pointer;
 }
 
-.listCardBody hr {
-  margin: 0px;
-  margin-top: 5px;
-  width: 90%;
+.hr {
+  margin: 5px 0;
+  width: 100%;
   border: 0;
   height: 1px;
   background-color: black;
+}
+
+.listCard {
+  transition: scale 1s;
+}
+
+.listCard a {
+  display: inline;
+  text-decoration: none;
+  color: black;
+}
+
+.listCard:hover a {
+  color: rgba(255, 255, 255, 0.696);
+}
+
+.listCard:hover {
+  cursor: pointer;
+  scale: 1.1;
 }
 
 /*랩탑 or 데스크탑*/
@@ -50,7 +68,7 @@ hr {
   /* card size, margin 수정 */
   .listCard {
     width: 250px;
-    height: 320px;
+    height: 350px;
     background-color: chocolate;
     margin: 28px;
     /* margin: 28px auto; */
@@ -63,7 +81,8 @@ hr {
     border-radius: 10% 10% 0px 0px;
   }
   .listCardBody {
-    width: 100%;
+    margin: auto;
+    width: 90%;
     height: 170px;
     padding: 0 10px;
     overflow-wrap: inherit;

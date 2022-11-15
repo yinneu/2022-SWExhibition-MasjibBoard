@@ -35,6 +35,13 @@
   transition: 1000ms linear all;
   overflow: hidden;
 }
+
+.longNav a {
+  text-decoration: none;
+  color: mintcream;
+  margin-left: 14px;
+}
+
 .widen {
   animation: spread 1s;
 }
