@@ -1,21 +1,4 @@
-@keyframes scale {
-  0% {
-    scale: 0.3;
-  }
-  to {
-    scale: 1;
-  }
-}
-
-@keyframes fadein {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
+/* ++++ 창닫기 아이콘 말고 다시 뽑기 버튼도 괜찮을 듯 */
 
 /*랩탑 or 데스크탑*/
 #cardDetail {
@@ -24,19 +7,37 @@
   right: 200px;
   width: 450px;
   height: 600px;
-  margin: auto;
   z-index: 110;
   border-radius: 20px;
   background-color: chocolate;
-  animation: fadein ease-out 0.5s, scale ease-out 0.5s;
+  animation: open ease-out 0.5s;
 }
 
+@keyframes open {
+  from {
+    scale: 0.3;
+    opacity: 0;
+  }
+  to {
+    scale: 1;
+    opacity: 1;
+  }
+}
+
+/* Detail 창닫기 */
 #detailClose {
   position: absolute;
-  top: 5px;
-  right: 5px;
+  top: 10px;
+  right: 10px;
+  /* color: rgb(146, 27, 27); */
   z-index: 100;
 }
+
+#detailClose i {
+  color: hsl(6, 76%, 59%);
+  font-size: 24px;
+}
+
 #detailClose:hover {
   cursor: pointer;
 }
@@ -83,19 +84,29 @@
   border-color: brown;
 }
 
+@keyframes slide_up {
+  0% {
+    top: 100%;
+  }
+  to {
+    top: 150px;
+  }
+}
+
 /*폰 세로화면*/
 @media (max-width: 786px) {
+
   #cardDetail {
     position: absolute;
-    top: 100%; /*80*/
-    left: 0px;
+    margin: 0 auto;
+    top: 100%;
+    left: 50%;
+    width: 300px;
     right: 150px;
-    /* width: 100vw; */
-    height: calc(100vh - 80px);
+    height: 500px;
     z-index: 110;
-    background-color: chocolate;
-    animation: none;
-    transition: all 2s;
+    animation: slide_up ease-out 0.5s;
+    transform: translate(-50%);
   }
 
   #detailClose {
@@ -107,6 +118,7 @@
   #detailClose:hover {
     cursor: pointer;
   }
+
 
   .detailBody {
     position: absolute;
@@ -139,24 +151,8 @@
     margin: 15px 0px 15px 0px;
   }
 
-  .silde_up {
-    /* animation: slide_up ease-out 0.5s; */
-    top: 30px;
-  }
-  .slide_down {
-    /* animation: slide_down ease-out 0.6s; */
-    top: 100%
-  }
-
-
-  @keyframes slide_up {
-    0% {
-      top: 100%;
-    }
-    to {
-      top: 80px;
-    }
-  }
+  /* 보류 */
+/* 
   @keyframes slide_down {
     0% {
       top: 80px;
@@ -164,5 +160,6 @@
     to {
       top: 100%;
     }
-  }
+  } */
 }
+
