@@ -6,6 +6,7 @@
     scale: 1;
   }
 }
+
 @keyframes fadein {
   from {
     opacity: 0;
@@ -15,13 +16,15 @@
   }
 }
 
+
 /*랩탑 or 데스크탑*/
 #cardDetail {
   position: absolute;
   top: 50px;
-  right: 150px;
-  width: 28vw;
+  right: 200px;
+  width: 450px;
   height: 600px;
+  margin: auto;
   z-index: 110;
   border-radius: 20px;
   background-color: chocolate;
@@ -38,50 +41,61 @@
   cursor: pointer;
 }
 
+/* 가게 정보 */
 .detailBody {
   position: absolute;
   top: 0px;
-  width: 28vw;
+  width: 100%;
   height: 600px;
   overflow: hidden;
 }
 
+
+/* 가게 썸네일 */
 .detailBody img {
   border-radius: 20px 20px 0px 0px;
   z-index: 95;
-  width: 28vw;
+  width: 100%;
   height: 30vh;
 }
+
+/* 가게 이름 */
 .detailBody .restaurantName {
   padding: 15px;
 }
+
+/* 가게 이름 외 정보박스 */
 .detailBody > .context {
   overflow-y: auto;
   height: 300px;
   padding: 0px 15px 0px 15px;
 }
 
+/* 가게 이름 외 정보 */
+.detailBody .column {
+  margin: 15px 0px 15px 0px;
+}
+
+/* 구분선 */
 .detailBody hr {
   border: 0px;
   border-top: 2px solid;
   border-color: brown;
 }
 
-.detailBody .column {
-  margin: 15px 0px 15px 0px;
-}
-
 /*폰 세로화면*/
 @media (max-width: 786px) {
   #cardDetail {
     position: absolute;
-    top: 80px;
+    top: 100%; /*80*/
     left: 0px;
     right: 150px;
-    width: 100vw;
+    /* width: 100vw; */
     height: calc(100vh - 80px);
     z-index: 110;
     background-color: chocolate;
+    animation: none;
+    transition: all 2s;
   }
 
   #detailClose {
@@ -97,13 +111,13 @@
   .detailBody {
     position: absolute;
     top: 0px;
-    width: 100vw;
+    width: 100%;
     height: calc(100vh - 80px);
   }
 
   .detailBody img {
     z-index: 95;
-    width: 100vw;
+    width: 100%;
     height: 30vh;
   }
   .detailBody .restaurantName {
@@ -126,11 +140,15 @@
   }
 
   .silde_up {
-    animation: slide_up ease-out 0.5s;
+    /* animation: slide_up ease-out 0.5s; */
+    top: 30px;
   }
   .slide_down {
-    animation: slide_down ease-out 0.6s;
+    /* animation: slide_down ease-out 0.6s; */
+    top: 100%
   }
+
+
   @keyframes slide_up {
     0% {
       top: 100%;
