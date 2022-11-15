@@ -1,6 +1,6 @@
 #navigationBar {
-  /* position: absolute; */
-  position: fixed;
+  position: absolute;
+  /* position: fixed; */
   top: 20px;
   right: 20px;
   z-index: 150;
@@ -42,6 +42,10 @@
   animation: short 1s;
 }
 
+.shortNav:hover {
+  scale: 1.2;
+}
+
 #navigationBar:hover {
   cursor: pointer;
 }
@@ -55,6 +59,7 @@
     width: 210px;
   }
 }
+
 /*너비가 줄어드는 애니매이션*/
 @keyframes short {
   0% {
@@ -65,18 +70,6 @@
   }
 }
 
-/*랩탑 or 데스크탑*/
-@media (min-width: 1025px) {
-  /* hover추가 */
-  .shortNav:hover {
-    scale: 1.2;
-  }
-}
 
-/*폰 세로화면*/
-@media (max-device-width: 600px) and (max-device-height: 1000px) {
-}
 
-/*폰 가로화면*/
-@media (max-device-width: 900px) and (max-device-height: 500px) {
-}
+

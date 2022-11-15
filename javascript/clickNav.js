@@ -22,3 +22,14 @@ function handleClickBtn(event) {
     is_spread = false;
   }
 }
+
+
+// 카테고리 네비바
+const categoryBtn = document.querySelector('.categoryButton');
+const categoryArea = document.querySelector(".categoryArea");
+
+categoryBtn.addEventListener("click", handeClickCtg);
+
+function handeClickCtg(event) {
+  categoryArea.style.display = "flex";
+}

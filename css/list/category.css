@@ -42,3 +42,49 @@ ul, ol, li {
     transition:  all 0.35s;
     cursor: pointer;
 }
+
+
+/* category-nav */
+.categoryButton {
+    width: 45px;
+    height: 45px;
+    padding: 8px 15px 0px 15px;
+    background-color: bisque;
+    border-radius: 10px;
+  }
+  
+  .hr {
+    margin: 0;
+    margin-bottom: 8px;
+    border: none;
+    width: auto;
+    height: 7px;
+    background-color: gray;
+    border-radius: 5px;
+  }
+
+  .hr:nth-child(3) {
+    height: 7.5px;
+  }
+
+@media (max-width: 786px) {
+    .categoryArea {
+
+        display: none;
+
+    }
+
+    .category-item {
+        width: 60px;
+        height: 40px;
+        margin: 0 16px;
+        list-style-type: none;
+        text-align: center;
+        line-height: 40px;
+        background-color: chocolate;
+        color: white;
+        border: 1px solid transparent;
+        border-radius: 10%;
+        z-index: 70;
+    }
+}

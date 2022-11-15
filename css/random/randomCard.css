@@ -1,5 +1,4 @@
 /*랩탑 or 데스크탑*/
-@media (min-width: 1025px) {
   .cardArea {
     position: absolute;
     top: -40vw;
@@ -29,10 +28,9 @@
     cursor: pointer;
     box-shadow: 25px 15px 15px 5px rgba(125, 125, 125, 0.9);
   }
-}
 
 /*폰 세로화면*/
-@media (max-width: 600px) and (max-height: 1000px) {
+@media (max-width: 786px) {
   body {
     position: fixed;
   }
@@ -61,8 +59,4 @@
     box-shadow: 10px 5px 5px rgba(128, 128, 128, 0.9);
     transition: 200ms linear all;
   }
-}
-
-/*폰 가로화면*/
-@media (max-device-width: 900px) and (max-device-height: 500px) {
 }
