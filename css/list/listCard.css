@@ -1,6 +1,6 @@
 /* Card List Page */
-hr {
-  margin: 0;
+a {
+  display: none;
 }
 #toTop {
   position: fixed;
@@ -22,56 +22,74 @@ hr {
   cursor: pointer;
 }
 
-.listCardBody hr {
-  margin: 0px;
-  margin-top: 5px;
-  width: 90%;
+.listCardBody div.hr {
+  margin: 5px 0;
+  width: 100%;
   border: 0;
   height: 1px;
   background-color: black;
 }
 
-/*랩탑 or 데스크탑*/
-  /* width, height 90v -> auto 수정, margin top 30 -> 100 수정, padding 추가 */
-  #listCardArea {
-    position: absolute;
-    top: 200px;
-    display: flex;
-    width: auto;
-    height: auto;
-    margin: 100px 100px;
-    padding: 0 80px;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    /* overflow-y: scroll; */
-    z-index: 60;
-  }
+.listCard {
+  transition: scale 1s;
+}
 
-  /* card size, margin 수정 */
-  .listCard {
-    width: 250px;
-    height: 320px;
-    background-color: chocolate;
-    margin: 28px;
-    /* margin: 28px auto; */
-    border-radius: 10%;
-  }
-  /*식당 사진*/
-  .resImg {
-    width: 250px;
-    height: 150px;
-    border-radius: 10% 10% 0px 0px;
-  }
-  .listCardBody {
-    width: 100%;
-    height: 170px;
-    padding: 0 10px;
-    overflow-wrap: inherit;
-  }
+.listCard a {
+  display: inline;
+  text-decoration: none;
+  color: black;
+}
+
+.listCard:hover a {
+  color: rgba(255, 255, 255, 0.696);
+}
+
+.listCard:hover {
+  cursor: pointer;
+  scale: 1.1;
+}
+
+/*랩탑 or 데스크탑*/
+/* width, height 90v -> auto 수정, margin top 30 -> 100 수정, padding 추가 */
+#listCardArea {
+  position: absolute;
+  top: 200px;
+  display: flex;
+  width: auto;
+  height: auto;
+  margin: 100px 100px;
+  padding: 0 80px;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  /* overflow-y: scroll; */
+  z-index: 60;
+}
+
+/* card size, margin 수정 */
+.listCard {
+  width: 250px;
+  height: 350px;
+  background-color: chocolate;
+  margin: 28px;
+  /* margin: 28px auto; */
+  border-radius: 10%;
+}
+/*식당 사진*/
+.resImg {
+  width: 250px;
+  height: 150px;
+  border-radius: 10% 10% 0px 0px;
+}
+.listCardBody {
+  margin: auto;
+  width: 90%;
+  height: 170px;
+  padding: 0 10px;
+  overflow-wrap: inherit;
+}
 
 /*폰 세로화면*/
 @media (max-width: 786px) {
-
   #listCardArea {
     position: absolute;
     top: 55px;
@@ -116,4 +134,3 @@ hr {
     padding: 0 10px;
   }
 }
-

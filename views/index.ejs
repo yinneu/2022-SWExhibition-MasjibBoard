@@ -15,6 +15,23 @@
     <link rel="stylesheet" href="./css/random/randomCardDetail.css" />
     <link rel="stylesheet" href="./css/random/randomCard.css" />
     <link rel="stylesheet" href="./css/random/message.css" />
+    <!-- font cdn & style tag-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jua&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Jua&display=swap");
+    </style>
+    <style>
+      * {
+        font-family: "Jua", sans-serif;
+        font-size: 16px;
+        font-weight: 100;
+      }
+    </style>
     <title>Random Pick</title>
   </head>
   <body>
@@ -71,12 +88,16 @@
           <% if(locals.data) { %> <% let i = Math.floor(Math.random() *
           data.length) %>
           <img src="<%= data[i].image%>" alt="1" />
-          <div class="restaurantName"><%= data[i].title%></div>
+          <div class="restaurantName" style="font-size: 25px">
+            <%= data[i].title%>
+          </div>
           <div class="context">
             <hr />
             <div class="address column"><%= data[i].address %></div>
             <hr />
             <div class="category column"><%= data[i].category%></div>
+            <hr />
+            <div class="link column"><a href="<%= data[i].link%>">링크</a></div>
             <hr />
           </div>
           <% } %>
@@ -84,7 +105,7 @@
       </div>
       <!--message section-->
       <div id="messageArea">
-        <p id="message">
+        <p id="message" style="font-size: 30px">
           왼쪽에 펼쳐진 카드들을 돌려,<br />
           랜덤으로 오늘의 메뉴를 정해봐요
         </p>

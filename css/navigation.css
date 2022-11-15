@@ -35,6 +35,14 @@
   transition: 1000ms linear all;
   overflow: hidden;
 }
+
+.longNav a {
+  display: inline;
+  text-decoration: none;
+  color: mintcream;
+  margin-left: 14px;
+}
+
 .widen {
   animation: spread 1s;
 }
@@ -69,7 +77,3 @@
     width: 50px;
   }
 }
-
-
-
-
