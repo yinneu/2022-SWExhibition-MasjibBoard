@@ -92,6 +92,7 @@ a {
 @media (max-width: 786px) {
   #listCardArea {
     position: absolute;
+    margin: auto;
     top: 55px;
     left: 0px;
     display: flex;
@@ -133,4 +134,5 @@ a {
     height: 150px;
     padding: 0 10px;
   }
+
 }

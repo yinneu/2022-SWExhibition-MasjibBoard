@@ -5,11 +5,11 @@ let onHover = false;
 let angle_after = 0;
 
 const media_mobile_vertical = matchMedia(
-  "(max-device-width: 786px)"
+  "(max-width: 786px)"
 );
 
 //랩탑 or 데스크탑일 때 카드 배치
-if (!media_mobile_vertical.matches) {
+// if (!media_mobile_vertical.matches) {
   for (let i = 0; i < cards.length; i++) {
     cards[i].style.transform = `
       rotate(${ANGLE * i}deg) translate(600px) rotate(90deg)`;
@@ -19,10 +19,7 @@ if (!media_mobile_vertical.matches) {
     cards[i].addEventListener("mouseleave", cardOut);
   }
 
-  //카드 area에 마우스 커서가 올라갔을 때, 스크롤이 감지 되면 카드 area를 회전
-  cardArea.addEventListener("mouseenter", handleHover);
-  cardArea.addEventListener("mouseleave", handleMouseOut);
-  cardArea.addEventListener("mousewheel", handleScroll);
+  window.addEventListener("mousewheel", handleScroll);
 
   function cardHover(event) {
     event.target.classList.add("cardScale");
@@ -31,43 +28,40 @@ if (!media_mobile_vertical.matches) {
     event.target.classList.remove("cardScale");
   }
 
-  function handleMouseOut() {
-    onHover = false;
-  }
-  function handleHover() {
-    onHover = true;
-  }
 
   function handleScroll(event) {
     let direction = event.wheelDelta;
-    if (onHover == true) {
+    // if (onHover == true) {
       if (direction > 0) {
         angle_after -= 35;
       } else {
         angle_after += 35;
       }
       cardArea.style.transform = "rotate(" + angle_after + "deg";
-    }
+    // }
   }
-}else {
-  for (let i = 0; i < cards.length; i++) {
-    cards[i].style.transform = `
-      rotate(${ANGLE * i}deg) translate(400px) rotate(90deg)`;
-  }
-  for (let i = 0; i < cards.length; i++) {
-    cards[i].addEventListener("mouseenter", cardHover);
-    cards[i].addEventListener("mouseleave", cardOut);
-  }
+// }
 
-  cardArea.addEventListener("mousewheel", handleScroll);
+// 모바일 랜덤 카드 리스트
+// else {
+//   for (let i = 0; i < cards.length; i++) {
+//     cards[i].style.transform = `
+//       rotate(${ANGLE * i}deg) translate(400px) rotate(90deg)`;
+//   }
+//   for (let i = 0; i < cards.length; i++) {
+//     cards[i].addEventListener("mouseenter", cardHover);
+//     cards[i].addEventListener("mouseleave", cardOut);
+//   }
 
-  function handleScroll(event) {
-    let direction = event.wheelDelta;
-    if (direction > 0) {
-      angle_after -= 35;
-    } else {
-      angle_after += 35;
-    }
-    cardArea.style.transform = "rotate(" + angle_after + "deg";
-  }
-}
+//   cardArea.addEventListener("mousewheel", handleScroll);
+
+//   function handleScroll(event) {
+//     let direction = event.wheelDelta;
+//     if (direction > 0) {
+//       angle_after -= 35;
+//     } else {
+//       angle_after += 35;
+//     }
+//     cardArea.style.transform = "rotate(" + angle_after + "deg";
+//   }
+//}
