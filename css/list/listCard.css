@@ -106,19 +106,27 @@ a {
 
   /* card size, margin 수정 */
   .listCard {
-    width: 250px;
-    height: 380px;
+    width: 280px;
+    height: 400px;
     background-color: chocolate;
     margin: 28px;
     /* margin: 28px auto; */
     border-radius: 10%;
   }
 
+  .listCardBody div.hr {
+    margin: 5px 0;
+    width: 100%;
+    border: 0;
+    height: 1px;
+    background-color: black;
+  }
+
   .imgArea {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 250px;
+    width: 280px;
     height: 200px;
     overflow: hidden;
   }
@@ -134,5 +142,4 @@ a {
     height: 150px;
     padding: 0 10px;
   }
-
 }

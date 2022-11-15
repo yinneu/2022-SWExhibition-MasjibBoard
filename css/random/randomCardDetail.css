@@ -50,6 +50,7 @@
   overflow: hidden;
 }
 
+
 /* 가게 썸네일 */
 .detailBody img {
   border-radius: 20px 20px 0px 0px;
@@ -161,7 +162,7 @@
       top: 80px;
     }
     to {
-      top: 1000px;
+      top: 100%;
     }
   }
 }
