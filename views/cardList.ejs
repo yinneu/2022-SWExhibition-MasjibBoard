@@ -16,6 +16,23 @@
     <link rel="stylesheet" href="../css/list/category.css" />
     <!--animation on scroll(aos) css-->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- font cdn -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jua&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Jua&display=swap");
+    </style>
+    <style>
+      * {
+        font-family: "Jua", sans-serif;
+        font-size: 16px;
+        font-weight: 100;
+      }
+    </style>
     <title>Restaurant List</title>
   </head>
   <body>
@@ -39,15 +56,14 @@
 
       <!-- Categroy Section -->
       <ul class="categoryArea">
-        <li id = "한식" class="category-item">한식</li>
-        <li id = "일식" class="category-item">일식</li>
-        <li id = "양식" class="category-item">양식</li>
-        <li id = "카페" class="category-item">카페</li>
-        <li id = "술집" class="category-item">술집</li>
-        <li id = "해물" class="category-item">해물</li>
-        <li id = "분식" class="category-item">분식</li>
+        <li id="한식" class="category-item">한식</li>
+        <li id="일식" class="category-item">일식</li>
+        <li id="양식" class="category-item">양식</li>
+        <li id="카페" class="category-item">카페</li>
+        <li id="술집" class="category-item">술집</li>
+        <li id="해물" class="category-item">해물</li>
+        <li id="분식" class="category-item">분식</li>
       </ul>
-
 
       <!--icon section-->
       <div class="iconArea" id="iconArea">
@@ -68,32 +84,38 @@
       <div id="listCardArea">
         <% if (locals.data) { %> <% for (let i = 0; i < data.length; i++) { %>
         <% let im = data[i].image %>
-        <div
-          class="listCard aos-animate"
-          data-aos="flip-right"
-          data-aos-duration="500"
-          data-aos-anchor-placement="center-bottom"
-        >
-          <div class="imgArea">
-            <img src="<%= data[i].image %>" class="resImg" />
+        <a href="<%= data[i].link %>">
+          <div
+            class="listCard aos-animate"
+            data-aos="flip-right"
+            data-aos-duration="500"
+            data-aos-anchor-placement="center-bottom"
+          >
+            <div class="imgArea">
+              <img src="<%= data[i].image %>" class="resImg" />
+            </div>
+            <div class="listCardBody">
+              <span style="font-size: 18px"> <%= data[i].title %> </span> <br />
+              <div class="hr"></div>
+              <% if (data[i].address.length < 16) { %>
+              <span> <%= data[i].address %> </span> <br />
+              <br />
+              <% } else { %>
+              <span> <%= data[i].address.substring(0, 17) %> </span> <br />
+              <span> <%= data[i].address.substring(17) %> </span> <br />
+              <% } %>
+              <div class="hr"></div>
+              <span> <%= data[i].contact %> </span> <br />
+              <div class="hr"></div>
+              <span> <%= data[i].category %> </span> <br />
+              <div class="hr"></div>
+              <a href="<%= data[i].link %>">
+                <%= data[i].link.substring(0, 17) + '...' %>
+              </a>
+              <br />
+            </div>
           </div>
-          <div class="listCardBody">
-            <span> <%= data[i].title %> </span> <br />
-            <hr />
-            <% if (data[i].address.length < 16) { %>
-            <span> <%= data[i].address %> </span> <br />
-            <% } else { %>
-            <span> <%= data[i].address.substring(0, 17) %> </span> <br />
-            <span> <%= data[i].address.substring(17) %> </span> <br />
-            <% } %>
-            <hr />
-            <span> <%= data[i].contact %> </span> <br />
-            <hr />
-            <span> <%= data[i].category %> </span> <br />
-            <hr />
-            <a href="<%= data[i].link %>"> 링크 </a> <br />
-          </div>
-        </div>
+        </a>
         <% } %> <% } %>
       </div>
       <a id="toTop">
@@ -107,22 +129,21 @@
     <script src="../javascript/listCard.js"></script>
     <script src="http://code.jquery.com/jquery-latest.min.js"></script>
     <script>
-      $('.category-item').click(function (e) {
+      $(".category-item").click(function (e) {
         let 카테고리 = e.target.id;
-        console.log(typeof(카테고리));
+        console.log(typeof 카테고리);
         let ds = encodeURI(카테고리);
 
         $.ajax({
-          method: 'get',
-          url: '/cardList/' + 카테고리,
+          method: "get",
+          url: "/cardList/" + 카테고리,
           //contentType: "application/x-www-form-urlencoded; charset=UTF-8",
-        }).done(function (결과) {
-          location.href = '/cardList/' + encodeURI(카테고리, "UTF-8");
-        }).fail(function (a, b, c) {
-
-        });
-
-      })
-     </script>
+        })
+          .done(function (결과) {
+            location.href = "/cardList/" + encodeURI(카테고리, "UTF-8");
+          })
+          .fail(function (a, b, c) {});
+      });
+    </script>
   </body>
 </html>
