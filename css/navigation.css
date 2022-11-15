@@ -37,6 +37,7 @@
 }
 
 .longNav a {
+  display: inline;
   text-decoration: none;
   color: mintcream;
   margin-left: 14px;
@@ -76,7 +77,3 @@
     width: 50px;
   }
 }
-
-
-
-
