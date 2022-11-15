@@ -2,6 +2,8 @@
 a {
   display: none;
 }
+
+/* scroll up 버튼 */
 #toTop {
   position: fixed;
   /* position: absolute; */
@@ -13,6 +15,7 @@ a {
   height: 50px;
   border-radius: 50%;
 }
+
 #arrowUp {
   width: 50px;
   height: 50px;
@@ -22,35 +25,8 @@ a {
   cursor: pointer;
 }
 
-.listCardBody div.hr {
-  margin: 5px 0;
-  width: 100%;
-  border: 0;
-  height: 1px;
-  background-color: black;
-}
 
-.listCard {
-  transition: scale 1s;
-}
-
-.listCard a {
-  display: inline;
-  text-decoration: none;
-  color: black;
-}
-
-.listCard:hover a {
-  color: rgba(255, 255, 255, 0.696);
-}
-
-.listCard:hover {
-  cursor: pointer;
-  scale: 1.1;
-}
-
-/*랩탑 or 데스크탑*/
-/* width, height 90v -> auto 수정, margin top 30 -> 100 수정, padding 추가 */
+/* 리스트 카드 영역 */
 #listCardArea {
   position: absolute;
   top: 200px;
@@ -65,21 +41,32 @@ a {
   z-index: 60;
 }
 
-/* card size, margin 수정 */
 .listCard {
   width: 250px;
   height: 350px;
   background-color: chocolate;
   margin: 28px;
-  /* margin: 28px auto; */
   border-radius: 10%;
+  transition: scale 1s;
 }
-/*식당 사진*/
-.resImg {
-  width: 250px;
-  height: 150px;
-  border-radius: 10% 10% 0px 0px;
+
+.listCard a {
+  display: inline;
+  text-decoration: none;
+  color: black;
 }
+
+.listCard:hover {
+  cursor: pointer;
+  scale: 1.1;
+}
+
+.listCard:hover a {
+  color: rgba(255, 255, 255, 0.696);
+}
+
+
+/* 리스트 카드 body 영역 */
 .listCardBody {
   margin: auto;
   width: 90%;
@@ -87,6 +74,22 @@ a {
   padding: 0 10px;
   overflow-wrap: inherit;
 }
+
+.listCardBody div.hr {
+  margin: 5px 0;
+  width: 100%;
+  border: 0;
+  height: 1px;
+  background-color: black;
+}
+
+/*식당 사진*/
+.resImg {
+  width: 250px;
+  height: 150px;
+  border-radius: 10% 10% 0px 0px;
+}
+
 
 /*폰 세로화면*/
 @media (max-width: 786px) {
@@ -104,24 +107,31 @@ a {
     z-index: 60;
   }
 
-  /* card size, margin 수정 */
   .listCard {
     width: 280px;
     height: 400px;
     background-color: chocolate;
     margin: 28px;
-    /* margin: 28px auto; */
     border-radius: 10%;
+  }
+  
+  /* 카드 내부 영역 */
+  .listCardBody {
+    width: 100%;
+    height: 150px;
+    margin: 5px 0;
+    padding: 0 10px;
   }
 
   .listCardBody div.hr {
     margin: 5px 0;
-    width: 100%;
+    width: 90%;
     border: 0;
     height: 1px;
     background-color: black;
   }
 
+  /* 가게 이미지 영역*/
   .imgArea {
     display: flex;
     justify-content: center;
@@ -137,9 +147,4 @@ a {
     border-radius: 10% 10% 0px 0px;
   }
 
-  .listCardBody {
-    width: 100%;
-    height: 150px;
-    padding: 0 10px;
-  }
 }

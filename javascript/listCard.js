@@ -1,3 +1,4 @@
+// scroll up
 const area = document.getElementById("listCardArea");
 const cards = document.getElementsByClassName("listCard");
 const topBtn = document.querySelector("#toTop");

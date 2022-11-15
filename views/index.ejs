@@ -7,7 +7,7 @@
     <!--icon-->
     <link rel="shortcut icon" href="./icons/fried-chicken.ico" />
     <!--my css link-->
-    <link rel="stylesheet" href="./css/index.css" />
+    <!-- <link rel="stylesheet" href="./css/index.css" /> -->
     <link rel="stylesheet" href="./css/icon.css" />
     <link rel="stylesheet" href="./css/navigation.css" />
     <link rel="stylesheet" href="./css/background.css" />
@@ -22,6 +22,7 @@
       href="https://fonts.googleapis.com/css2?family=Jua&display=swap"
       rel="stylesheet"
     />
+    <script src="https://kit.fontawesome.com/726c80ac4c.js" crossorigin="anonymous"></script>
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Jua&display=swap");
     </style>
@@ -83,7 +84,10 @@
       </div>
       <!--card detail section-->
       <div id="cardDetail" class="hidden">
-        <span id="detailClose">❌</span>
+        <span id="detailClose">
+          <!-- <i class="fa-solid fa-xmark"></i> -->
+          <i class="fa-regular fa-circle-xmark"></i>
+        </span>
         <div class="detailBody">
           <% if(locals.data) { %> <% let i = Math.floor(Math.random() *
           data.length) %>
