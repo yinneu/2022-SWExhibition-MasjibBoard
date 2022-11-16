@@ -44,7 +44,7 @@ li {
   cursor: pointer;
 } */
 
-/* category-nav */
+/* 카테고리 버튼 영역*/
 .categoryButton {
   width: 45px;
   height: 45px;
@@ -53,6 +53,7 @@ li {
   border-radius: 10px;
 }
 
+/* 카테고리 버튼 바 */
 .hr {
   margin: 0;
   margin-bottom: 8px;

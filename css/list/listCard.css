@@ -47,28 +47,45 @@ a {
   background-color: chocolate;
   margin: 28px;
   border-radius: 10%;
-  transition: scale 1s;
+  transition: all .5s;
 }
 
 .listCard a {
   display: inline;
   text-decoration: none;
   color: black;
+  transition: all .5s;
 }
 
 .listCard:hover {
   cursor: pointer;
-  scale: 1.1;
+  animation: scaleAni .5s ease-in;
 }
 
 .listCard:hover a {
   color: rgba(255, 255, 255, 0.696);
 }
 
+.listCard:hover div.hr {
+  background-color:rgba(255, 255, 255, 0.696);
+}
+
+@keyframes scaleAni {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
 
 /* 리스트 카드 body 영역 */
 .listCardBody {
-  margin: auto;
+  margin: 8px auto;
   width: 90%;
   height: 170px;
   padding: 0 10px;
@@ -81,6 +98,11 @@ a {
   border: 0;
   height: 1px;
   background-color: black;
+  transition: all .5s;
+}
+
+.listCardBody span a{
+  padding-left: 3px;
 }
 
 /*식당 사진*/
@@ -96,7 +118,7 @@ a {
   #listCardArea {
     position: absolute;
     margin: auto;
-    top: 55px;
+    top: 120px;
     left: 0px;
     display: flex;
     width: auto;
@@ -117,15 +139,15 @@ a {
   
   /* 카드 내부 영역 */
   .listCardBody {
-    width: 100%;
+    width: 90%;
     height: 150px;
-    margin: 5px 0;
-    padding: 0 10px;
+    margin: 8px auto;
+    padding: 4px 10px;
   }
 
   .listCardBody div.hr {
     margin: 5px 0;
-    width: 90%;
+    width: 100%;
     border: 0;
     height: 1px;
     background-color: black;

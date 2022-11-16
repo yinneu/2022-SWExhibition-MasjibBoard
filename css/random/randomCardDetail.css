@@ -89,7 +89,8 @@
     top: 100%;
   }
   to {
-    top: 150px;
+    /* top: 150px; */
+    top: 20vh;
   }
 }
 
@@ -124,7 +125,7 @@
     position: absolute;
     top: 0px;
     width: 100%;
-    height: calc(100vh - 80px);
+    height: 500px;
   }
 
   .detailBody img {
@@ -132,12 +133,14 @@
     width: 100%;
     height: 30vh;
   }
+
   .detailBody .restaurantName {
     padding: 15px;
   }
+
   .detailBody > .context {
     overflow-y: auto;
-    height: calc(50vh + 20px);
+    height: 200px;
     padding: 0px 15px 0px 15px;
   }
 
