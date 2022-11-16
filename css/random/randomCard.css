@@ -24,6 +24,7 @@ body {
   border-radius: 50%;
   transition: 1000ms ease-out all;
   z-index: 100;
+  /* overflow: hidden; */
 }
 
 .card {
@@ -50,10 +51,10 @@ body {
 @media (max-width: 786px) {
 
   .cardArea {
-    position: absolute;
-    top: -3vh;
-    left: -760px; /*-600*/
-    margin: 0;
+    position: fixed;
+    top: 100px;
+    left: -760px;
+    margin: auto 0;
     width: 800px;
     height: 800px;
     border-radius: 50%;
@@ -72,6 +73,13 @@ body {
     border-radius: 10%;
     box-shadow: 10px 5px 5px rgba(128, 128, 128, 0.9);
     transition: 200ms linear all;
+  }
+
+  /* scale때문에 x-scroll 생김 */
+  .cardScale {
+    scale: 1.1;
+    cursor: pointer;
+    box-shadow: 25px 15px 15px 5px rgba(125, 125, 125, 0.9);
   }
 
 }
