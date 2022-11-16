@@ -10,6 +10,8 @@
  프론트엔드 :  연예림, 신은철 <br />
  백엔드 : 연예림
  
+ <a href = "http://3.36.229.145:3000/">Random Pick 사이트보기<a/>
+ 
 ![image](https://user-images.githubusercontent.com/99879845/202237849-c673b12d-c217-473c-b560-86df296fae3b.png)
 
  
