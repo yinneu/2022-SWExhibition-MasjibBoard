@@ -9,7 +9,7 @@
   height: 600px;
   z-index: 110;
   border-radius: 20px;
-  background-color: chocolate;
+  background-color: #ffd54a;
   animation: open ease-out 0.5s;
 }
 
@@ -96,7 +96,7 @@
 .detailBody hr {
   border: 0px;
   border-top: 2px solid;
-  border-color: brown;
+  border-color: #de9440;
 }
 
 @keyframes slide_up {
@@ -160,7 +160,7 @@
   .detailBody hr {
     border: 0px;
     border-top: 2px solid;
-    border-color: brown;
+    border-color: #de9440;
   }
 
   .detailBody .column {

@@ -13,9 +13,9 @@
   right: 0;
   width: 50px;
   height: 50px;
-  border: solid #822d03 2px;
+  border: solid #de9440 2px;
   border-radius: 50%;
-  background-color: chocolate;
+  background-color: #ffd54a;
   justify-content: center;
   line-height: 50px;
   z-index: 160;
@@ -28,7 +28,7 @@
   width: 210px;
   height: 54px;
   line-height: 54px;
-  background-color: chocolate;
+  background-color: #ffd54a;
   border-radius: 25px;
   float: left;
   z-index: 150;
@@ -39,8 +39,12 @@
 .longNav a {
   display: inline;
   text-decoration: none;
-  color: mintcream;
+  color: #de9440;
   margin-left: 14px;
+}
+
+.longNav a:hover {
+  color: #c320f6;
 }
 
 .widen {

@@ -45,7 +45,7 @@ li {
   left: 0px;
   width: 100vw;
   height: 250px;
-  background-color: azure;
+  background-color: #ffd54a;
   z-index: 250;
 }
 
@@ -56,7 +56,8 @@ li {
   line-height: 40px;
   text-align: center;
   border-radius: 10px;
-  background-color: bisque;
+  background-color: #de9440;
+  color: #ffd54a;
 }
 
 .category-item:hover {
@@ -72,7 +73,7 @@ li {
   height: 45px;
   margin: 20px 0 0 20px;
   padding: 8px 15px 0px 15px;
-  background-color: bisque;
+  background-color: #ffd54a;
   border-radius: 15px;
   z-index: 250;
 }
@@ -84,7 +85,7 @@ li {
   border: none;
   width: auto;
   height: 7px;
-  background-color: gray;
+  background-color: #de9440;
   border-radius: 5px;
 }
 
@@ -104,6 +105,6 @@ li {
     line-height: 40px;
     text-align: center;
     border-radius: 10px;
-    background-color: bisque;
+    background-color: #de9440;
   }
 }
