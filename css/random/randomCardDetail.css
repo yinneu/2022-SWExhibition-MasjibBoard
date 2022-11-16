@@ -9,7 +9,7 @@
   height: 600px;
   z-index: 110;
   border-radius: 20px;
-  background-color: chocolate;
+  background-color: #ffd54a;
   animation: open ease-out 0.5s;
 }
 
@@ -51,7 +51,6 @@
   overflow: hidden;
 }
 
-
 /* 가게 썸네일 */
 .detailBody img {
   border-radius: 20px 20px 0px 0px;
@@ -77,11 +76,27 @@
   margin: 15px 0px 15px 0px;
 }
 
+/* 가게 링크 */
+.link a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* 추가 정보에 대한 메세지 */
+
+.ps {
+  margin: 0 auto;
+  /* width: 100%;
+  height: 60px; */
+  line-height: 60px;
+  text-align: center;
+}
+
 /* 구분선 */
 .detailBody hr {
   border: 0px;
   border-top: 2px solid;
-  border-color: brown;
+  border-color: #de9440;
 }
 
 @keyframes slide_up {
@@ -96,7 +111,6 @@
 
 /*폰 세로화면*/
 @media (max-width: 786px) {
-
   #cardDetail {
     position: absolute;
     margin: 0 auto;
@@ -119,7 +133,6 @@
   #detailClose:hover {
     cursor: pointer;
   }
-
 
   .detailBody {
     position: absolute;
@@ -147,7 +160,7 @@
   .detailBody hr {
     border: 0px;
     border-top: 2px solid;
-    border-color: brown;
+    border-color: #de9440;
   }
 
   .detailBody .column {
@@ -155,7 +168,7 @@
   }
 
   /* 보류 */
-/* 
+  /* 
   @keyframes slide_down {
     0% {
       top: 80px;
@@ -165,4 +178,3 @@
     }
   } */
 }
-

@@ -36,21 +36,46 @@ li {
   border: 1px solid transparent;
   border-radius: 10%;
   z-index: 70;
+} */
+
+.categoryArea {
+  display: none;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100vw;
+  height: 250px;
+  background-color: #ffd54a;
+  z-index: 250;
+}
+
+.category-item {
+  margin: auto;
+  width: 60px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 10px;
+  background-color: #de9440;
+  color: #ffd54a;
 }
 
 .category-item:hover {
   scale: 1.2;
   transition: all 0.35s;
   cursor: pointer;
-} */
+}
 
 /* 카테고리 버튼 영역*/
 .categoryButton {
+  position: fixed;
   width: 45px;
   height: 45px;
+  margin: 20px 0 0 20px;
   padding: 8px 15px 0px 15px;
-  background-color: bisque;
-  border-radius: 10px;
+  background-color: #ffd54a;
+  border-radius: 15px;
+  z-index: 250;
 }
 
 /* 카테고리 버튼 바 */
@@ -60,23 +85,12 @@ li {
   border: none;
   width: auto;
   height: 7px;
-  background-color: gray;
+  background-color: #de9440;
   border-radius: 5px;
 }
 
 .hr:nth-child(3) {
   height: 7.5px;
-}
-
-.categoryArea {
-  display: none;
-  position: fixed;
-  top: 0px;
-  left: 0px;
-  width: 100vw;
-  height: 300px;
-  background-color: azure;
-  z-index: 300;
 }
 
 @media (max-width: 786px) {
@@ -85,16 +99,12 @@ li {
   }
 
   .category-item {
+    margin: auto;
     width: 60px;
     height: 40px;
-    margin: 0 16px;
-    list-style-type: none;
-    text-align: center;
     line-height: 40px;
-    background-color: chocolate;
-    color: white;
-    border: 1px solid transparent;
-    border-radius: 10%;
-    z-index: 70;
+    text-align: center;
+    border-radius: 10px;
+    background-color: #de9440;
   }
 }
