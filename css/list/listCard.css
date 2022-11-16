@@ -43,7 +43,7 @@ a {
 .listCard {
   width: 250px;
   height: 350px;
-  background-color: chocolate;
+  background-color: #ffd54a;
   margin: 28px;
   border-radius: 10%;
   transition: all 0.5s;
@@ -52,7 +52,7 @@ a {
 .listCard a {
   display: inline;
   text-decoration: none;
-  color: black;
+  color: #f57653;
   transition: all 0.5s;
 }
 
@@ -62,11 +62,13 @@ a {
 }
 
 .listCard:hover a {
-  color: rgba(255, 255, 255, 0.696);
+  /* color: rgba(255, 255, 255, 0.696); */
+  color: #c320f6;
 }
 
 .listCard:hover div.hr {
-  background-color: rgba(255, 255, 255, 0.696);
+  /* background-color: rgba(255, 255, 255, 0.696); */
+  background-color: #c320f6;
 }
 
 @keyframes scaleAni {
@@ -95,7 +97,7 @@ a {
   width: 100%;
   border: 0;
   height: 1px;
-  background-color: black;
+  background-color: #de9440;
   transition: all 0.5s;
 }
 
@@ -129,7 +131,7 @@ a {
   .listCard {
     width: 280px;
     height: 400px;
-    background-color: chocolate;
+    background-color: #ffd54a;
     margin: 28px;
     border-radius: 10%;
   }
@@ -147,7 +149,7 @@ a {
     width: 100%;
     border: 0;
     height: 1px;
-    background-color: black;
+    background-color: #de9440;
   }
 
   /* 가게 이미지 영역*/
