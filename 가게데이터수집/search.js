@@ -1,9 +1,12 @@
+//가게 이미지, 번호, 네이버지도 페이지 정보 가져오기
+//셀레니움 사용
+
 //npm i selenium-webdriver
 //npm i chromedriver
 const express = require("express");
 const app = express();
 const mysql = require("mysql");
-const dbconfig = require("./config/database.js");
+const dbconfig = require("../config/database.js");
 const connection = mysql.createConnection(dbconfig);
 
 const { Builder, By, Key, until } = require("selenium-webdriver");
