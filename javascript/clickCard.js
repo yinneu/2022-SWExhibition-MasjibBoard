@@ -1,9 +1,7 @@
 const detail = document.getElementById("cardDetail");
 const closeBtn = document.getElementById("detailClose");
 const messageArea = document.getElementById("messageArea");
-let media_mobile_vertical = window.matchMedia(
-  "(max-width:786px)"
-);
+let media_mobile_vertical = window.matchMedia("(max-width:786px)");
 
 // 상세페이지 open 확인
 let isOpen = false;
@@ -20,17 +18,17 @@ for (let i = 0; i < cards.length; i++) {
 function handleClick(event) {
   //event.target.classList.remove("cardScale");
   detail.classList.remove("hidden");
-  if(media_mobile_vertical.matches){
+  if (media_mobile_vertical.matches) {
     // detail.style.top = "150px";
     detail.style.top = "20vh";
   }
   isOpen = true;
 }
 
-// 상세페이지 
+// 상세페이지
 function handleClose(event) {
   detail.classList.add("hidden");
-  if(media_mobile_vertical.matches){
+  if (media_mobile_vertical.matches) {
     detail.style.top = "100%";
   }
   location.reload();

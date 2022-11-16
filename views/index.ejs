@@ -22,7 +22,10 @@
       href="https://fonts.googleapis.com/css2?family=Jua&display=swap"
       rel="stylesheet"
     />
-    <script src="https://kit.fontawesome.com/726c80ac4c.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/726c80ac4c.js"
+      crossorigin="anonymous"
+    ></script>
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Jua&display=swap");
     </style>
@@ -97,12 +100,19 @@
           </div>
           <div class="context">
             <hr />
-            <div class="address column"><%= data[i].address %></div>
+            <div class="address column">주소: <%= data[i].address %></div>
             <hr />
-            <div class="category column"><%= data[i].category %></div>
+            <div class="contact column">번호: <%= data[i].contact %></div>
             <hr />
-            <div class="link column"><a href="<%= data[i].link%>">링크</a></div>
+            <div class="category column">분류: <%= data[i].category %></div>
             <hr />
+            <div class="link column">
+              <a href="<%= data[i].link%>">
+                <%= data[i].link.substring(0, 22) + data[i].title%>
+              </a>
+            </div>
+            <hr />
+            <div class="ps">추가 정보가 필요하시면 위 링크를 클릭해주세요!</div>
           </div>
           <% } %>
         </div>
