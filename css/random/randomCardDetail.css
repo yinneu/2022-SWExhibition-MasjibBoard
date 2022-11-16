@@ -1,87 +1,113 @@
-@keyframes scale {
-  0% {
-    scale: 0.3;
-  }
-  to {
-    scale: 1;
-  }
-}
-@keyframes fadein {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
+/* ++++ 창닫기 아이콘 말고 다시 뽑기 버튼도 괜찮을 듯 */
 
 /*랩탑 or 데스크탑*/
 #cardDetail {
   position: absolute;
   top: 50px;
-  right: 150px;
-  width: 28vw;
+  right: 200px;
+  width: 450px;
   height: 600px;
   z-index: 110;
   border-radius: 20px;
   background-color: chocolate;
-  animation: fadein ease-out 0.5s, scale ease-out 0.5s;
+  animation: open ease-out 0.5s;
 }
 
+@keyframes open {
+  from {
+    scale: 0.3;
+    opacity: 0;
+  }
+  to {
+    scale: 1;
+    opacity: 1;
+  }
+}
+
+/* Detail 창닫기 */
 #detailClose {
   position: absolute;
-  top: 5px;
-  right: 5px;
+  top: 10px;
+  right: 10px;
+  /* color: rgb(146, 27, 27); */
   z-index: 100;
 }
+
+#detailClose i {
+  color: hsl(6, 76%, 59%);
+  font-size: 24px;
+}
+
 #detailClose:hover {
   cursor: pointer;
 }
 
+/* 가게 정보 */
 .detailBody {
   position: absolute;
   top: 0px;
-  width: 28vw;
+  width: 100%;
   height: 600px;
   overflow: hidden;
 }
 
+
+/* 가게 썸네일 */
 .detailBody img {
   border-radius: 20px 20px 0px 0px;
   z-index: 95;
-  width: 28vw;
+  width: 100%;
   height: 30vh;
 }
+
+/* 가게 이름 */
 .detailBody .restaurantName {
   padding: 15px;
 }
+
+/* 가게 이름 외 정보박스 */
 .detailBody > .context {
   overflow-y: auto;
   height: 300px;
   padding: 0px 15px 0px 15px;
 }
 
+/* 가게 이름 외 정보 */
+.detailBody .column {
+  margin: 15px 0px 15px 0px;
+}
+
+/* 구분선 */
 .detailBody hr {
   border: 0px;
   border-top: 2px solid;
   border-color: brown;
 }
 
-.detailBody .column {
-  margin: 15px 0px 15px 0px;
+@keyframes slide_up {
+  0% {
+    top: 100%;
+  }
+  to {
+    /* top: 150px; */
+    top: 20vh;
+  }
 }
 
 /*폰 세로화면*/
 @media (max-width: 786px) {
+
   #cardDetail {
     position: absolute;
-    top: 80px;
-    left: 0px;
+    margin: 0 auto;
+    top: 100%;
+    left: 50%;
+    width: 300px;
     right: 150px;
-    width: 100vw;
-    height: calc(100vh - 80px);
+    height: 500px;
     z-index: 110;
-    background-color: chocolate;
+    animation: slide_up ease-out 0.5s;
+    transform: translate(-50%);
   }
 
   #detailClose {
@@ -94,24 +120,27 @@
     cursor: pointer;
   }
 
+
   .detailBody {
     position: absolute;
     top: 0px;
-    width: 100vw;
-    height: calc(100vh - 80px);
+    width: 100%;
+    height: 500px;
   }
 
   .detailBody img {
     z-index: 95;
-    width: 100vw;
+    width: 100%;
     height: 30vh;
   }
+
   .detailBody .restaurantName {
     padding: 15px;
   }
+
   .detailBody > .context {
     overflow-y: auto;
-    height: calc(50vh + 20px);
+    height: 200px;
     padding: 0px 15px 0px 15px;
   }
 
@@ -125,20 +154,8 @@
     margin: 15px 0px 15px 0px;
   }
 
-  .silde_up {
-    animation: slide_up ease-out 0.5s;
-  }
-  .slide_down {
-    animation: slide_down ease-out 0.6s;
-  }
-  @keyframes slide_up {
-    0% {
-      top: 100%;
-    }
-    to {
-      top: 80px;
-    }
-  }
+  /* 보류 */
+/* 
   @keyframes slide_down {
     0% {
       top: 80px;
@@ -146,5 +163,6 @@
     to {
       top: 100%;
     }
-  }
+  } */
 }
+

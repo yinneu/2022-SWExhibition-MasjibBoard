@@ -1,6 +1,6 @@
 #navigationBar {
-  position: absolute;
-  /* position: fixed; */
+  /* position: absolute; */
+  position: fixed;
   top: 20px;
   right: 20px;
   z-index: 150;
@@ -25,7 +25,7 @@
 /*클릭 후 내비게이션*/
 .longNav {
   position: relative;
-  width: 210px; /*200*/
+  width: 210px;
   height: 54px;
   line-height: 54px;
   background-color: chocolate;

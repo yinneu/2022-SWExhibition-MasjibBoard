@@ -2,6 +2,8 @@
 a {
   display: none;
 }
+
+/* scroll up 버튼 */
 #toTop {
   position: fixed;
   /* position: absolute; */
@@ -13,6 +15,7 @@ a {
   height: 50px;
   border-radius: 50%;
 }
+
 #arrowUp {
   width: 50px;
   height: 50px;
@@ -22,35 +25,8 @@ a {
   cursor: pointer;
 }
 
-.listCardBody div.hr {
-  margin: 5px 0;
-  width: 100%;
-  border: 0;
-  height: 1px;
-  background-color: black;
-}
 
-.listCard {
-  transition: scale 1s;
-}
-
-.listCard a {
-  display: inline;
-  text-decoration: none;
-  color: black;
-}
-
-.listCard:hover a {
-  color: rgba(255, 255, 255, 0.696);
-}
-
-.listCard:hover {
-  cursor: pointer;
-  scale: 1.1;
-}
-
-/*랩탑 or 데스크탑*/
-/* width, height 90v -> auto 수정, margin top 30 -> 100 수정, padding 추가 */
+/* 리스트 카드 영역 */
 #listCardArea {
   position: absolute;
   top: 200px;
@@ -65,35 +41,84 @@ a {
   z-index: 60;
 }
 
-/* card size, margin 수정 */
 .listCard {
   width: 250px;
   height: 350px;
   background-color: chocolate;
   margin: 28px;
-  /* margin: 28px auto; */
   border-radius: 10%;
+  transition: all .5s;
 }
-/*식당 사진*/
-.resImg {
-  width: 250px;
-  height: 150px;
-  border-radius: 10% 10% 0px 0px;
+
+.listCard a {
+  display: inline;
+  text-decoration: none;
+  color: black;
+  transition: all .5s;
 }
+
+.listCard:hover {
+  cursor: pointer;
+  animation: scaleAni .5s ease-in;
+}
+
+.listCard:hover a {
+  color: rgba(255, 255, 255, 0.696);
+}
+
+.listCard:hover div.hr {
+  background-color:rgba(255, 255, 255, 0.696);
+}
+
+@keyframes scaleAni {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+
+/* 리스트 카드 body 영역 */
 .listCardBody {
-  margin: auto;
+  margin: 8px auto;
   width: 90%;
   height: 170px;
   padding: 0 10px;
   overflow-wrap: inherit;
 }
 
+.listCardBody div.hr {
+  margin: 5px 0;
+  width: 100%;
+  border: 0;
+  height: 1px;
+  background-color: black;
+  transition: all .5s;
+}
+
+.listCardBody span a{
+  padding-left: 3px;
+}
+
+/*식당 사진*/
+.resImg {
+  width: 250px;
+  height: 150px;
+  border-radius: 10% 10% 0px 0px;
+}
+
+
 /*폰 세로화면*/
 @media (max-width: 786px) {
   #listCardArea {
     position: absolute;
     margin: auto;
-    top: 55px;
+    top: 120px;
     left: 0px;
     display: flex;
     width: auto;
@@ -104,14 +129,20 @@ a {
     z-index: 60;
   }
 
-  /* card size, margin 수정 */
   .listCard {
     width: 280px;
     height: 400px;
     background-color: chocolate;
     margin: 28px;
-    /* margin: 28px auto; */
     border-radius: 10%;
+  }
+  
+  /* 카드 내부 영역 */
+  .listCardBody {
+    width: 90%;
+    height: 150px;
+    margin: 8px auto;
+    padding: 4px 10px;
   }
 
   .listCardBody div.hr {
@@ -122,6 +153,7 @@ a {
     background-color: black;
   }
 
+  /* 가게 이미지 영역*/
   .imgArea {
     display: flex;
     justify-content: center;
@@ -136,4 +168,5 @@ a {
     height: 200px;
     border-radius: 10% 10% 0px 0px;
   }
+
 }
