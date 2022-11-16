@@ -21,7 +21,6 @@ function cardOut(event) {
   event.target.classList.remove("cardScale");
 }
 
-
 // 마우스 휠 작동시 카드 로테이트
 window.addEventListener("mousewheel", handleScroll);
 function handleScroll(event) {
@@ -32,34 +31,30 @@ function handleScroll(event) {
     angle_after += 35;
   }
   // 상세페이지 close 에만 rotate
-  if(!isOpen){
+  if (!isOpen) {
     cardArea.style.transform = "rotate(" + angle_after + "deg";
   }
 }
-
 
 // 터치 스크롤시 카드 로테이트
 let startx, starty, endx, endy;
 window.addEventListener("touchstart", (event) => {
   startx = event.changedTouches[0].screenX;
   starty = event.changedTouches[0].screenY;
-})
+});
 window.addEventListener("touchend", (event) => {
   endx = event.changedTouches[0].screenX;
   endy = event.changedTouches[0].screenY;
 
-  let rightRotate = starty-endy;
-  let leftRotate = endy-starty;
+  let rightRotate = starty - endy;
+  let leftRotate = endy - starty;
 
-  if(rightRotate > 30){
+  if (rightRotate > 30) {
     angle_after -= 100;
-  }else if(leftRotate > 30){
+  } else if (leftRotate > 30) {
     angle_after += 100;
   }
-  if(!isOpen){
+  if (!isOpen) {
     cardArea.style.transform = "rotate(" + angle_after + "deg";
   }
-})
-
-
-
+});
