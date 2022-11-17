@@ -30,14 +30,14 @@ body {
 
 /* 스크롤을 움직이는 영역 */
 ::-webkit-scrollbar-track {
-  background: #ffd54a;
+  background: #ffa500;
 }
 
 /* 스크롤 */
 ::-webkit-scrollbar-thumb {
   height: 30px;
   border-radius: 10px;
-  background-color: #de9440;
+  background-color: #ffd54a;
   background-clip: padding-box;
   border: 4px solid transparent;
 }
