@@ -54,16 +54,6 @@
         </div>
       </nav>
 
-      <!-- Category-nav Section -->
-      <!-- <div class="categoryButton">
-        <div class="hr"></div>
-        <div class="hr"></div>
-        <div class="hr"></div>
-      </div> -->
-
-      <!-- when category button clicked, background whilch will be showed -->
-      <!-- <div class="grayBG"></div> -->
-
       <!-- Categroy Section -->
       <button id="categoryBtn">
         <% if(id) { %> <%= id %> <% } else { %> <%= "ALL" %> <% } %>
@@ -110,22 +100,15 @@
               <img src="<%= data[i].image %>" class="resImg" />
             </div>
             <div class="listCardBody">
-              <span style="font-size: 18px"> <%= data[i].title %> </span> <br />
+              <span style="font-size: 21px"> <%= data[i].title %> </span>
               <div class="hr"></div>
-              <% if (data[i].address.length < 16) { %>
-              <span> <%= data[i].address %> </span> <br />
-              <br />
-              <% } else { %>
-              <span> <%= data[i].address.substring(0, 17) %> </span> <br />
-              <span> <%= data[i].address.substring(17) %> </span> <br />
-              <% } %>
+              <span> <%= data[i].address.substring(7) %> </span>
               <div class="hr"></div>
-              <span> <%= data[i].contact %> </span> <br />
+              <span> <%= data[i].contact %> </span>
               <div class="hr"></div>
-              <span> <%= data[i].category %> </span> <br />
+              <span> <%= data[i].category %> </span>
               <div class="hr"></div>
               <a href="<%= data[i].link %>"> click for more information </a>
-              <br />
             </div>
           </div>
         </a>
