@@ -12,7 +12,8 @@
  
  <a href = "http://3.36.229.145:3000/">Random Pick 사이트보기<a/>
  
-![image](https://user-images.githubusercontent.com/99879845/202237849-c673b12d-c217-473c-b560-86df296fae3b.png)
+![판넬](https://user-images.githubusercontent.com/99879845/202459685-24582c27-a0c0-4b60-8a4e-79c75f9572fa.png)
+
 
  
 ### 프로젝트 설명
