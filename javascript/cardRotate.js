@@ -1,5 +1,6 @@
 const cards = document.getElementsByClassName("card");
 const cardArea = document.getElementById("cardArea");
+const msg = document.getElementById("messageArea");
 const ANGLE = 360 / cards.length;
 let onHover = false;
 let angle_after = 0;
@@ -24,6 +25,7 @@ function cardOut(event) {
 // 마우스 휠 작동시 카드 로테이트
 window.addEventListener("mousewheel", handleScroll);
 function handleScroll(event) {
+  msg.style.display = "none";
   let direction = event.wheelDelta;
   if (direction > 0) {
     angle_after -= 35;
@@ -39,6 +41,7 @@ function handleScroll(event) {
 // 터치 스크롤시 카드 로테이트
 let startx, starty, endx, endy;
 window.addEventListener("touchstart", (event) => {
+  msg.style.display = "none";
   startx = event.changedTouches[0].screenX;
   starty = event.changedTouches[0].screenY;
 });

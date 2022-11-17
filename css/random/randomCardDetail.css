@@ -11,6 +11,7 @@
   border-radius: 20px;
   background-color: #ffd54a;
   animation: open ease-out 0.5s;
+  color: rgb(204, 69, 37);
 }
 
 @keyframes open {
