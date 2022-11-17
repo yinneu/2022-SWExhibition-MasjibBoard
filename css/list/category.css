@@ -17,7 +17,6 @@ li {
   width: 800px;
   height: 100px;
   margin: 0 auto;
-  padding: 0 40px;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-evenly;
@@ -40,27 +39,6 @@ li {
   z-index: 70;
 }
 
-/* .categoryArea {
-  display: flex;
-  position: fixed;
-  top: 100px;
-  left: 0px;
-  width: 100vw;
-  height: 250px;
-  background-color: #ffd54a;
-  z-index: 250;
-} */
-
-/* .category-item {
-  margin: auto;
-  width: 60px;
-  height: 40px;
-  line-height: 40px;
-  text-align: center;
-  border-radius: 10px;
-  background-color: #de9440;
-  color: #ffd54a;
-} */
 
 .category-item:hover {
   scale: 1.2;
@@ -68,18 +46,6 @@ li {
   cursor: pointer;
 }
 
-
-/* 카테고리 버튼 영역*/
-/* .categoryButton {
-  position: fixed;
-  width: 45px;
-  height: 45px;
-  margin: 20px 0 0 20px;
-  padding: 8px 15px 0px 15px;
-  background-color: #ffd54a;
-  border-radius: 15px;
-  z-index: 250;
-} */
 
 .hr {
   margin: 0;
@@ -107,6 +73,7 @@ li {
     background-color: #ffd54a;
     border-radius: 10px;
     z-index: 200;
+  }
 
   .categoryArea {
     display: none;
