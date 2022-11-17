@@ -26,7 +26,7 @@ app.get("/home", (req, res) => {
 app.get("/cardList", (req, res) => {
   connection.query("SELECT * from random_mj.mjlist", (error, rows) => {
     if (error) throw error;
-    res.render("cardList", { data: rows });
+    res.render("cardList", { data: rows, id: req.params.id });
   });
 });
 
@@ -35,8 +35,7 @@ app.get("/cardList/:id", (req, res) => {
     `SELECT * from random_mj.mjlist where category like "%${req.params.id}%"`,
     (error, rows) => {
       if (error) throw error;
-      res.render("cardList", { data: rows });
-      // console.log(req.params.id);
+      res.render("cardList", { data: rows, id: req.params.id });
     }
   );
 });
