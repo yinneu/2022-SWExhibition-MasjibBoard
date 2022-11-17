@@ -36,6 +36,7 @@ app.get("/cardList/:id", (req, res) => {
     (error, rows) => {
       if (error) throw error;
       res.render("cardList", { data: rows });
+      // console.log(req.params.id);
     }
   );
 });

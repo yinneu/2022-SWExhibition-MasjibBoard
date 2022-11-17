@@ -20,7 +20,7 @@ function handleClick(event) {
   detail.classList.remove("hidden");
   if (media_mobile_vertical.matches) {
     // detail.style.top = "150px";
-    detail.style.top = "20vh";
+    detail.style.top = "13vh";
   }
   isOpen = true;
 }

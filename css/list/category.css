@@ -7,12 +7,12 @@ li {
   margin: 0;
 }
 
-/* .categoryArea {
+.categoryArea {
   display: flex;
   position: absolute;
-  top: 100px;
+  top: 150px;
   left: 50%;
-  width: 700px;
+  width: 800px;
   height: 100px;
   margin: 0 auto;
   padding: 0 40px;
@@ -31,25 +31,25 @@ li {
   list-style-type: none;
   text-align: center;
   line-height: 40px;
-  background-color: chocolate;
+  background-color: #ffd54a;
   color: white;
   border: 1px solid transparent;
   border-radius: 10%;
   z-index: 70;
-} */
+}
 
-.categoryArea {
-  display: none;
+/* .categoryArea {
+  display: flex;
   position: fixed;
-  top: 0px;
+  top: 100px;
   left: 0px;
   width: 100vw;
   height: 250px;
   background-color: #ffd54a;
   z-index: 250;
-}
+} */
 
-.category-item {
+/* .category-item {
   margin: auto;
   width: 60px;
   height: 40px;
@@ -58,7 +58,7 @@ li {
   border-radius: 10px;
   background-color: #de9440;
   color: #ffd54a;
-}
+} */
 
 .category-item:hover {
   scale: 1.2;
@@ -67,7 +67,7 @@ li {
 }
 
 /* 카테고리 버튼 영역*/
-.categoryButton {
+/* .categoryButton {
   position: fixed;
   width: 45px;
   height: 45px;
@@ -76,9 +76,8 @@ li {
   background-color: #ffd54a;
   border-radius: 15px;
   z-index: 250;
-}
+} */
 
-/* 카테고리 버튼 바 */
 .hr {
   margin: 0;
   margin-bottom: 8px;
@@ -94,8 +93,41 @@ li {
 }
 
 @media (max-width: 786px) {
+  #categoryBtn {
+    border: 0;
+    padding: 0;
+    position: absolute;
+    top: 20px;
+    left: calc(30vw - 1.5px);
+    width: 150px;
+    height: 50px;
+    background-color: #ffd54a;
+    border-radius: 10px;
+    z-index: 200;
+  }
+
   .categoryArea {
     display: none;
+    position: absolute;
+    padding: 0;
+    top: 70px;
+    left: calc(30vw - 1.5px);
+    width: 150px;
+    height: 50px;
+    background-color: #ffd54a;
+    border-radius: 0px 0px 10px 10px;
+    z-index: 80;
+    animation: categoryDown 0.5s;
+    overflow: hidden;
+  }
+
+  @keyframes categoryDown {
+    from {
+      height: 50px;
+    }
+    to {
+      height: 200px;
+    }
   }
 
   .category-item {
@@ -105,6 +137,5 @@ li {
     line-height: 40px;
     text-align: center;
     border-radius: 10px;
-    background-color: #de9440;
   }
 }
