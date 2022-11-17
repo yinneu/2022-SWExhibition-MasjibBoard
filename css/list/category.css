@@ -7,7 +7,6 @@ li {
   margin: 0;
 }
 
-
 /* 기본 데스크탑 카테고리 */
 .categoryArea {
   display: flex;
@@ -17,7 +16,7 @@ li {
   width: 800px;
   height: 100px;
   margin: 0 auto;
-  padding: 0 40px;
+  /* padding: 0 40px; */
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-evenly;
@@ -45,7 +44,6 @@ li {
   transition: all 0.35s;
   cursor: pointer;
 }
-
 
 /* 카테고리 버튼 영역*/
 #categoryBtn {
@@ -80,6 +78,11 @@ li {
     border-radius: 10px;
     z-index: 140;
     transform: translate(-50%);
+  }
+  #categoryBtn:hover {
+    font-size: larger;
+    transition: all 0.35s;
+    cursor: pointer;
   }
 
   .categoryArea {
