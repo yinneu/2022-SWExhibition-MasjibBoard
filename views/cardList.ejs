@@ -10,7 +10,6 @@
     <link rel="stylesheet" href="../css/icon.css" />
     <link rel="stylesheet" href="../css/background.css" />
     <link rel="stylesheet" href="../css/navigation.css" />
-    <link rel="stylesheet" href="../css/list/categoryBackground.css" />
     <!--card list css-->
     <link rel="stylesheet" href="../css/list/listCard.css" />
     <!-- cardlist category css -->
@@ -56,16 +55,18 @@
       </nav>
 
       <!-- Category-nav Section -->
-      <div class="categoryButton">
+      <!-- <div class="categoryButton">
         <div class="hr"></div>
         <div class="hr"></div>
         <div class="hr"></div>
-      </div>
+      </div> -->
 
       <!-- when category button clicked, background whilch will be showed -->
-      <div class="grayBG"></div>
+      <!-- <div class="grayBG"></div> -->
 
       <!-- Categroy Section -->
+      <button id="categoryBtn"></button>
+
       <ul class="categoryArea">
         <li id="" class="category-item">ALL</li>
         <li id="한식" class="category-item">한식</li>
@@ -143,7 +144,6 @@
     <script>
       $(".category-item").click(function (e) {
         let 카테고리 = e.target.id;
-        console.log(typeof 카테고리);
         let ds = encodeURI(카테고리);
 
         $.ajax({

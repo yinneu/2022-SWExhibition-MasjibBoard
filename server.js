@@ -35,7 +35,8 @@ app.get("/cardList/:id", (req, res) => {
     `SELECT * from random_mj.mjlist where category like "%${req.params.id}%"`,
     (error, rows) => {
       if (error) throw error;
-      res.render("cardList", { data: rows, id: req.params.id });
+      res.render("cardList", { data: rows });
+      // console.log(req.params.id);
     }
   );
 });

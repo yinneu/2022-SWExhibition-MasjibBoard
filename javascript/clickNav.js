@@ -24,22 +24,25 @@ function handleClickBtn(event) {
 }
 
 // 카테고리 네비바
-const categoryBtn = document.querySelector(".categoryButton");
+const categoryBtn = document.querySelector("#categoryBtn");
 const categoryArea = document.querySelector(".categoryArea");
-const grayBG = document.querySelector(".grayBG");
-const body = document.getElementsByTagName("body");
+//const categoryItem = document.getElementBy(".category-item");
+// const grayBG = document.querySelector(".grayBG");
 
-categoryBtn.addEventListener("click", handeClickCtg);
-grayBG.addEventListener("click", handleClickBG);
+categoryBtn.addEventListener("click", handeClickCategory);
 
-function handleClickBG(event) {
-  categoryArea.style.display = "none";
-  grayBG.style.display = "none";
-  listCardArea.style.overflow = "auto";
-}
+// function handleClickBG(event) {
+//   categoryArea.style.display = "none";
+//   grayBG.style.display = "none";
+//   listCardArea.style.overflow = "auto";
+// }
 
-function handeClickCtg(event) {
+function handeClickCategory(event) {
   categoryArea.style.display = "flex";
-  grayBG.style.display = "block";
-  listCardArea.style.overflow = "hidden";
+  categoryArea.style.height = "200px";
+  categoryBtn.style.borderRadius = "10px 10px 0px 0px";
+  console.log(window.location.pathname);
+  // categoryBtn.innerHTML = window.location;
+  // grayBG.style.display = "block";
+  // listCardArea.style.overflow = "hidden";
 }
