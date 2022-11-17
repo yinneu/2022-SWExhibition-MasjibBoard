@@ -1,4 +1,8 @@
 /* Card List Page */
+html {
+  scroll-behavior: smooth;
+}
+
 a {
   display: none;
 }
