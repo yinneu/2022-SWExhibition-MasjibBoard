@@ -1,60 +1,35 @@
-
 # Masjib Board
 
-## **맛집을 :mag_right:검색하고 :star2:추천받고 :pencil2:추가해보자!**
+## **카드를 돌려 맛집을 :star2:추천받아보자!**
 
 
-- **팀명**   
+- **팀명** 
 포도맛마이쭈 :grapes:
 
 - **팀원**   
- 프론트엔드 :  연예림, 신은철 
+ 프론트엔드 :  연예림, 신은철 <br />
+ 백엔드 : 연예림
+ 
+ <a href = "http://3.36.229.145:3000/">Random Pick 사이트보기<a/>
+ 
+![image](https://user-images.githubusercontent.com/99879845/202237849-c673b12d-c217-473c-b560-86df296fae3b.png)
 
-
----
+ 
 ### 프로젝트 설명
-맛집을 위한 웹사이트 만들기
-
+맛집을 위한 랜덤 추천 웹사이트 <br />
+스크롤과 터치를 이용해 카드를 돌려보고 카드를 선택해 맛집을 추천받는다. <br />
+바닐라JS로 구현한 다양한 카드 애니메이션을 구현하였다.
+ 
 - 기능
-  - 맛집 검색하기
-  - 나만의 맛집 추가하기
-  - 맛집 추천 게시판
-  - 현재 위치와 가까운 맛집 랜덤 추천받기
+  - 맛집 랜덤 추천 받기
+  - 카테고리별 맛집 보기
 
 - 디자인   
   - 전체적인 게시판 구성이나 랜덤 추첨 페이지를 카드모션을 활용하여 표현
----
-### 개발언어와 개발환경
-
+ 
 - 개발언어   
-HTML, CSS, JAVASCRIPT 
-LINUX
+  - HTML, CSS, JAVASCRIPT 
 
 - 개발환경 및 도구
-AWS, MySQL, VSCODE, PUTTY 등
-NAVER 지역 검색 API, Selenium
-
----
-### 페이지 레이아웃 구성
-
-- 메인페이지    
-현재 위치와 가까운 맛집을 지도상으로 확인할 수 있다. 
-<img src="https://user-images.githubusercontent.com/99879845/190467923-4af44671-688a-4064-8578-50893fc46cbc.png" width="400" height="250"/>
-
-
-
-- 추천게시판 페이지   
-사람들이 추천하는 맛집을 나열한다.
-<img src="https://user-images.githubusercontent.com/99879845/190461035-32f875fc-7c79-4ba8-93ef-73595d375659.png" width="400" height="250"/>
-  
-
-
-- 맛집추천 페이지   
-카카오 map api를 활용하여 가게 위치를 입력하고 추천글을 작성한다.
-<img src="https://user-images.githubusercontent.com/99879845/190466993-e9ac591d-b3b9-45e2-bfc2-0512ff58fb16.png" width="400" height="250"/>
-
-
-
-- 랜덤 맛집 추첨   
-카드 모션을 활용하여 현재 위치와 가까운 맛집들 중 하나를 랜덤 추천해준다. 
-<img src="https://user-images.githubusercontent.com/99879845/190461192-5c0b562a-8338-4664-b1e5-32e4fe091464.png" width="400" height="250"/>
+  - AWS, MySQL
+  - NAVER 지역 검색 API, Selenium
