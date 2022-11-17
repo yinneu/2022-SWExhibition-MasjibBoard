@@ -33,7 +33,7 @@ body {
   left: var(--card-initialized-left);
   width: var(--card-width);
   height: var(--card-height);
-  background-color: #c320f6;
+  background-color: blue;
   border-style: none;
   border-radius: 10%;
   box-shadow: 10px 5px 5px rgba(128, 128, 128, 0.9);
@@ -66,7 +66,7 @@ body {
     left: 350px;
     width: 100px; /*100*/
     height: 150px; /*150*/
-    background-color: #c320f6;
+    background-color: rgb(0, 0, 255);
     border-style: none;
     border-radius: 10%;
     box-shadow: 10px 5px 5px rgba(128, 128, 128, 0.9);

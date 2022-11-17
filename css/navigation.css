@@ -27,9 +27,9 @@
   position: relative;
   width: 210px;
   height: 54px;
-  line-height: 54px;
+  line-height: 55px;
   background-color: #ffd54a;
-  border-radius: 25px;
+  border-radius: 27px;
   float: left;
   z-index: 150;
   transition: 1000ms linear all;
@@ -40,7 +40,7 @@
   display: inline;
   text-decoration: none;
   color: #de9440;
-  margin-left: 14px;
+  margin-left: 20px;
 }
 
 .longNav a:hover {
