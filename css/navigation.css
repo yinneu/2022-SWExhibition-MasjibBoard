@@ -50,6 +50,10 @@
   font-size: 20px;
 }
 
+.longNav a:nth-child(2) {
+  margin-left: 10px;
+}
+
 .longNav a:hover {
   color: #8c0000;
 }
