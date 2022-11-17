@@ -20,17 +20,17 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Jua&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Gamja+Flower&display=swap"
       rel="stylesheet"
     />
     <style>
-      @import url("https://fonts.googleapis.com/css2?family=Jua&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Gamja+Flower&display=swap");
     </style>
     <style>
       * {
-        font-family: "Jua", sans-serif;
+        font-family: "Gamja Flower", sans-serif;
         font-size: 16px;
-        font-weight: 100;
+        font-weight: 600;
       }
     </style>
     <title>Restaurant List</title>
@@ -46,7 +46,7 @@
       <nav id="navigationBar">
         <!--navigation section-->
         <div id="navBtn" class="shortNav">
-          <span>🍖</span>
+          <img src="../icons/ham.png" alt="ham" />
         </div>
         <div id="navBar" class="longNav hidden">
           <a href="/home">Home</a>
@@ -124,9 +124,7 @@
               <div class="hr"></div>
               <span> <%= data[i].category %> </span> <br />
               <div class="hr"></div>
-              <a href="<%= data[i].link %>">
-                <%= data[i].link.substring(0, 17) + '...' %>
-              </a>
+              <a href="<%= data[i].link %>"> click for more information </a>
               <br />
             </div>
           </div>

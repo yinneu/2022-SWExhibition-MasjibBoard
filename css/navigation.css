@@ -22,6 +22,12 @@
   transition: all 0.5s;
 }
 
+.shortNav img {
+  margin-top: 10px;
+  width: 30px;
+  height: 30px;
+}
+
 /*클릭 후 내비게이션*/
 .longNav {
   position: relative;
@@ -39,7 +45,7 @@
 .longNav a {
   display: inline;
   text-decoration: none;
-  color: #de9440;
+  color: rgb(204, 69, 37);
   margin-left: 20px;
 }
 
