@@ -40,28 +40,6 @@ li {
   z-index: 70;
 }
 
-/* .categoryArea {
-  display: flex;
-  position: fixed;
-  top: 100px;
-  left: 0px;
-  width: 100vw;
-  height: 250px;
-  background-color: #ffd54a;
-  z-index: 250;
-} */
-
-/* .category-item {
-  margin: auto;
-  width: 60px;
-  height: 40px;
-  line-height: 40px;
-  text-align: center;
-  border-radius: 10px;
-  background-color: #de9440;
-  color: #ffd54a;
-} */
-
 .category-item:hover {
   scale: 1.2;
   transition: all 0.35s;
@@ -70,16 +48,9 @@ li {
 
 
 /* 카테고리 버튼 영역*/
-/* .categoryButton {
-  position: fixed;
-  width: 45px;
-  height: 45px;
-  margin: 20px 0 0 20px;
-  padding: 8px 15px 0px 15px;
-  background-color: #ffd54a;
-  border-radius: 15px;
-  z-index: 250;
-} */
+#categoryBtn {
+  display: none;
+}
 
 .hr {
   margin: 0;
@@ -97,39 +68,34 @@ li {
 
 @media (max-width: 786px) {
   #categoryBtn {
+    display: block;
     border: 0;
     padding: 0;
     position: absolute;
     top: 20px;
-    left: calc(30vw - 1.5px);
+    left: 50%;
     width: 150px;
     height: 50px;
     background-color: #ffd54a;
     border-radius: 10px;
-    z-index: 200;
+    z-index: 140;
+    transform: translate(-50%);
+  }
 
   .categoryArea {
-    display: none;
+    display: flex;
     position: absolute;
     padding: 0;
-    top: 70px;
-    left: calc(30vw - 1.5px);
+    top: 20px;
+    left: 50%;
     width: 150px;
     height: 50px;
     background-color: #ffd54a;
-    border-radius: 0px 0px 10px 10px;
+    border-radius: 10px;
     z-index: 80;
-    animation: categoryDown 0.5s;
+    transition: all 0.5s;
     overflow: hidden;
-  }
-
-  @keyframes categoryDown {
-    from {
-      height: 50px;
-    }
-    to {
-      height: 200px;
-    }
+    transform: translate(-50%);
   }
 
   .category-item {
