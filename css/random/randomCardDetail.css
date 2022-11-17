@@ -166,15 +166,4 @@
   .detailBody .column {
     margin: 15px 0px 15px 0px;
   }
-
-  /* 보류 */
-  /* 
-  @keyframes slide_down {
-    0% {
-      top: 80px;
-    }
-    to {
-      top: 100%;
-    }
-  } */
 }
