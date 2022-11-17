@@ -1,4 +1,4 @@
-# Masjib Board
+# MasjibCard Random Pick
 
 ## **카드를 돌려 맛집을 :star2:추천받아보자!**
 
