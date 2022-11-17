@@ -17,7 +17,6 @@ li {
   width: 800px;
   height: 100px;
   margin: 0 auto;
-  padding: 0 40px;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-evenly;
@@ -40,6 +39,7 @@ li {
   z-index: 70;
 }
 
+
 .category-item:hover {
   scale: 1.2;
   transition: all 0.35s;
@@ -47,10 +47,12 @@ li {
 }
 
 
+
 /* 카테고리 버튼 영역*/
 #categoryBtn {
   display: none;
 }
+
 
 .hr {
   margin: 0;
