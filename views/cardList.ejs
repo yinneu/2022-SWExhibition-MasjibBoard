@@ -65,7 +65,9 @@
       <!-- <div class="grayBG"></div> -->
 
       <!-- Categroy Section -->
-      <button id="categoryBtn"></button>
+      <button id="categoryBtn">
+        <% if(id) { %> <%= id %> <% } else { %> <%= "ALL" %> <% } %>
+      </button>
 
       <ul class="categoryArea">
         <li id="" class="category-item">ALL</li>

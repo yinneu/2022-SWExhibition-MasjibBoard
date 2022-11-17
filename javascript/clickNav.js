@@ -26,23 +26,22 @@ function handleClickBtn(event) {
 // 카테고리 네비바
 const categoryBtn = document.querySelector("#categoryBtn");
 const categoryArea = document.querySelector(".categoryArea");
-//const categoryItem = document.getElementBy(".category-item");
-// const grayBG = document.querySelector(".grayBG");
 
 categoryBtn.addEventListener("click", handeClickCategory);
-
-// function handleClickBG(event) {
-//   categoryArea.style.display = "none";
-//   grayBG.style.display = "none";
-//   listCardArea.style.overflow = "auto";
-// }
+let is_open = false;
 
 function handeClickCategory(event) {
-  categoryArea.style.display = "flex";
-  categoryArea.style.height = "200px";
-  categoryBtn.style.borderRadius = "10px 10px 0px 0px";
-  console.log(window.location.pathname);
-  // categoryBtn.innerHTML = window.location;
-  // grayBG.style.display = "block";
-  // listCardArea.style.overflow = "hidden";
+  if (is_open) {
+    //닫을 때
+    categoryArea.style.paddingTop = "0";
+    categoryArea.style.height = "50px";
+    categoryBtn.style.borderRadius = "10px";
+    is_open = false;
+  } else {
+    //열 때
+    categoryArea.style.paddingTop = "50px";
+    categoryArea.style.height = "200px";
+    categoryBtn.style.borderRadius = "10px 10px 0px 0px";
+    is_open = true;
+  }
 }

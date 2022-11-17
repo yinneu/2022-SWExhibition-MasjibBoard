@@ -47,6 +47,13 @@ li {
 }
 
 
+
+/* 카테고리 버튼 영역*/
+#categoryBtn {
+  display: none;
+}
+
+
 .hr {
   margin: 0;
   margin-bottom: 8px;
@@ -63,40 +70,34 @@ li {
 
 @media (max-width: 786px) {
   #categoryBtn {
+    display: block;
     border: 0;
     padding: 0;
     position: absolute;
     top: 20px;
-    left: calc(30vw - 1.5px);
+    left: 50%;
     width: 150px;
     height: 50px;
     background-color: #ffd54a;
     border-radius: 10px;
-    z-index: 200;
+    z-index: 140;
+    transform: translate(-50%);
   }
 
   .categoryArea {
-    display: none;
+    display: flex;
     position: absolute;
     padding: 0;
-    top: 70px;
-    left: calc(30vw - 1.5px);
+    top: 20px;
+    left: 50%;
     width: 150px;
     height: 50px;
     background-color: #ffd54a;
-    border-radius: 0px 0px 10px 10px;
+    border-radius: 10px;
     z-index: 80;
-    animation: categoryDown 0.5s;
+    transition: all 0.5s;
     overflow: hidden;
-  }
-
-  @keyframes categoryDown {
-    from {
-      height: 50px;
-    }
-    to {
-      height: 200px;
-    }
+    transform: translate(-50%);
   }
 
   .category-item {
