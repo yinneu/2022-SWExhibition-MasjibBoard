@@ -32,24 +32,23 @@ li {
   text-align: center;
   line-height: 40px;
   background-color: #ffd54a;
-  color: white;
+  color: rgb(204, 69, 37);
   border: 1px solid transparent;
   border-radius: 10%;
   z-index: 70;
 }
 
-
 .category-item:hover {
   scale: 1.2;
   transition: all 0.35s;
   cursor: pointer;
+  color: #8c0000;
 }
 
 /* 카테고리 버튼 영역*/
 #categoryBtn {
   display: none;
 }
-
 
 .hr {
   margin: 0;
@@ -79,11 +78,14 @@ li {
     border-radius: 10px;
     z-index: 140;
     transform: translate(-50%);
+    color: rgb(204, 69, 37);
+    font-size: 20px;
   }
   #categoryBtn:hover {
-    font-size: larger;
+    font-size: 25px;
     transition: all 0.35s;
     cursor: pointer;
+    color: #8c0000;
   }
 
   .categoryArea {
@@ -109,5 +111,6 @@ li {
     line-height: 40px;
     text-align: center;
     border-radius: 10px;
+    font-size: 20px;
   }
 }

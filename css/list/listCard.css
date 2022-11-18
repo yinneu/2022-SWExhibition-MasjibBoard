@@ -56,7 +56,7 @@ a {
 .listCard a {
   display: inline;
   text-decoration: none;
-  color: #f57653;
+  color: rgb(204, 69, 37);
   transition: all 0.5s;
 }
 
@@ -67,12 +67,12 @@ a {
 
 .listCard:hover a {
   /* color: rgba(255, 255, 255, 0.696); */
-  color: #c320f6;
+  color: #8c0000;
 }
 
 .listCard:hover div.hr {
   /* background-color: rgba(255, 255, 255, 0.696); */
-  background-color: #c320f6;
+  background-color: #8c0000;
 }
 
 @keyframes scaleAni {

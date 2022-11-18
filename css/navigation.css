@@ -13,13 +13,19 @@
   right: 0;
   width: 50px;
   height: 50px;
-  border: solid #de9440 2px;
+  border: solid rgb(204, 69, 37) 2px;
   border-radius: 50%;
   background-color: #ffd54a;
   justify-content: center;
   line-height: 50px;
   z-index: 160;
   transition: all 0.5s;
+}
+
+.shortNav img {
+  margin-top: 10px;
+  width: 30px;
+  height: 30px;
 }
 
 /*클릭 후 내비게이션*/
@@ -39,12 +45,17 @@
 .longNav a {
   display: inline;
   text-decoration: none;
-  color: #de9440;
+  color: rgb(204, 69, 37);
   margin-left: 20px;
+  font-size: 20px;
+}
+
+.longNav a:nth-child(2) {
+  margin-left: 5px;
 }
 
 .longNav a:hover {
-  color: #c320f6;
+  color: #8c0000;
 }
 
 .widen {

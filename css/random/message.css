@@ -2,21 +2,15 @@
 
 #messageArea {
   position: absolute;
-  top: 120px;
-  right: 150px;
-  width: 500px;
-  height: 70vh;
+  top: 45%;
+  right: 300px;
   text-align: center;
-  z-index: 65;
-  background-color: transparent;
-  border-radius: 20px;
+  z-index: 101;
   margin: auto;
 }
 #message {
-  height: 70vh;
-  line-height: 35vh;
-  font-size: 25px;
-  font-weight: bold;
+  font-size: 40px;
+  color: maroon;
 }
 
 /*폰 세로화면*/

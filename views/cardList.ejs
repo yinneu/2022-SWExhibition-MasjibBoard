@@ -20,17 +20,17 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Jua&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Gamja+Flower&display=swap"
       rel="stylesheet"
     />
     <style>
-      @import url("https://fonts.googleapis.com/css2?family=Jua&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Gamja+Flower&display=swap");
     </style>
     <style>
       * {
-        font-family: "Jua", sans-serif;
+        font-family: "Gamja Flower", sans-serif;
         font-size: 16px;
-        font-weight: 100;
+        font-weight: 600;
       }
     </style>
     <title>Restaurant List</title>
@@ -46,23 +46,13 @@
       <nav id="navigationBar">
         <!--navigation section-->
         <div id="navBtn" class="shortNav">
-          <span>🍖</span>
+          <img src="../icons/ham.png" alt="ham" />
         </div>
         <div id="navBar" class="longNav hidden">
           <a href="/home">Home</a>
           <a href="/cardList">Card List</a>
         </div>
       </nav>
-
-      <!-- Category-nav Section -->
-      <!-- <div class="categoryButton">
-        <div class="hr"></div>
-        <div class="hr"></div>
-        <div class="hr"></div>
-      </div> -->
-
-      <!-- when category button clicked, background whilch will be showed -->
-      <!-- <div class="grayBG"></div> -->
 
       <!-- Categroy Section -->
       <button id="categoryBtn">
@@ -110,24 +100,15 @@
               <img src="<%= data[i].image %>" class="resImg" />
             </div>
             <div class="listCardBody">
-              <span style="font-size: 18px"> <%= data[i].title %> </span> <br />
+              <span style="font-size: 21px"> <%= data[i].title %> </span>
               <div class="hr"></div>
-              <% if (data[i].address.length < 16) { %>
-              <span> <%= data[i].address %> </span> <br />
-              <br />
-              <% } else { %>
-              <span> <%= data[i].address.substring(0, 17) %> </span> <br />
-              <span> <%= data[i].address.substring(17) %> </span> <br />
-              <% } %>
+              <span> <%= data[i].address.substring(7) %> </span>
               <div class="hr"></div>
-              <span> <%= data[i].contact %> </span> <br />
+              <span> <%= data[i].contact %> </span>
               <div class="hr"></div>
-              <span> <%= data[i].category %> </span> <br />
+              <span> <%= data[i].category %> </span>
               <div class="hr"></div>
-              <a href="<%= data[i].link %>">
-                <%= data[i].link.substring(0, 17) + '...' %>
-              </a>
-              <br />
+              <a href="<%= data[i].link %>"> click for more information </a>
             </div>
           </div>
         </a>

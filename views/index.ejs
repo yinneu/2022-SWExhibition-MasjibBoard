@@ -19,7 +19,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Jua&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Gamja+Flower&display=swap"
       rel="stylesheet"
     />
     <script
@@ -27,13 +27,13 @@
       crossorigin="anonymous"
     ></script>
     <style>
-      @import url("https://fonts.googleapis.com/css2?family=Jua&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Gamja+Flower&display=swap");
     </style>
     <style>
       * {
-        font-family: "Jua", sans-serif;
+        font-family: "Gamja Flower", sans-serif;
         font-size: 16px;
-        font-weight: 100;
+        font-weight: 600;
       }
     </style>
     <title>Random Pick</title>
@@ -43,7 +43,7 @@
       <!--navigation section-->
       <nav id="navigationBar">
         <div id="navBtn" class="shortNav">
-          <span>🍖</span>
+          <img src="../icons/ham.png" alt="ham" />
         </div>
         <div id="navBar" class="longNav hidden">
           <a href="/home">Home</a>
@@ -100,7 +100,9 @@
           </div>
           <div class="context">
             <hr />
-            <div class="address column">주소: <%= data[i].address %></div>
+            <div class="address column">
+              주소: <%= data[i].address.substring(7) %>
+            </div>
             <hr />
             <div class="contact column">번호: <%= data[i].contact %></div>
             <hr />
@@ -117,10 +119,7 @@
       </div>
       <!--message section-->
       <div id="messageArea">
-        <p id="message" style="font-size: 30px">
-          왼쪽에 펼쳐진 카드들을 돌려,<br />
-          랜덤으로 오늘의 메뉴를 정해봐요
-        </p>
+        <p id="message">카드를 스크롤 해보세요</p>
       </div>
     </div>
     <!--my javascript link-->
