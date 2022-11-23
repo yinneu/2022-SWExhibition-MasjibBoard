@@ -36,15 +36,19 @@
     <title>Restaurant List</title>
   </head>
   <body>
+
     <!--aos import script code-->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!--aos run script code-->
     <script>
       AOS.init();
     </script>
+
+    <!-- root  -->
     <div id="root" class="root">
+
+      <!--Navigation Section-->
       <nav id="navigationBar">
-        <!--navigation section-->
         <div id="navBtn" class="shortNav">
           <img src="../icons/ham.png" alt="ham" />
         </div>
@@ -70,7 +74,7 @@
         <li id="분식" class="category-item">분식</li>
       </ul>
 
-      <!--icon section-->
+      <!--Icon Section-->
       <div class="iconArea" id="iconArea">
         <img src="../icons/donut.png" alt="1" />
         <img src="../icons/cake.png" alt="1" />
@@ -84,7 +88,8 @@
         <img src="../icons/taco.png" alt="1" />
         <img src="../icons/hamburger.png" alt="1" />
       </div>
-      <!--card section-->
+
+      <!--Card Section-->
       <div id="top"></div>
       <div id="listCardArea">
         <% if (locals.data) { %> <% for (let i = 0; i < data.length; i++) { %>
@@ -118,7 +123,8 @@
         <img src="../icons/arrow-up.png" alt="top" title="to Up" id="arrowUp" />
       </a>
     </div>
-    <!--my javascript link-->
+
+    <!-- javascript link-->
     <script src="../javascript/floating.js"></script>
     <script src="../javascript/clickNav.js"></script>
     <!--card list javascript-->

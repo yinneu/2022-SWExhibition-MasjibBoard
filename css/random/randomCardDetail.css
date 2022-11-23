@@ -14,6 +14,10 @@
   color: rgb(204, 69, 37);
 }
 
+#cardDetail:hover .link > a{
+  color: #2a2afb;
+}
+
 @keyframes open {
   from {
     scale: 0.3;
