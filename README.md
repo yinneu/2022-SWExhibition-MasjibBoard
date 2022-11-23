@@ -30,7 +30,7 @@
   - 전체적인 게시판 구성이나 랜덤 추첨 페이지를 카드모션을 활용하여 표현
  
 - 개발언어   
-  - HTML, CSS, JAVASCRIPT, EJS
+  - HTML, CSS, JAVASCRIPT, EJS, Jquery
 
 - 개발환경 및 도구
   - AWS, MySQL
